@@ -7,7 +7,7 @@ class Customers(models.Model):
     last_name = models.CharField(max_length=256)
     email=models.EmailField()
     phone_number=models.IntegerField()
-    website=models.URLField()cd
+    website=models.URLField()
     state=models.CharField()
     city=models.CharField()
     postal_code=models.IntegerField()
