@@ -1,5 +1,5 @@
 from django.shortcuts import render,HttpResponse,redirect
-from .models import Orders,Customers,Products_and_Services,Suppliers,Taxes
+from .models import Customers,Products_and_Services,Suppliers,Taxes
 
 # Create your views here.
 def orders(request):

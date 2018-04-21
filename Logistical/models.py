@@ -8,8 +8,8 @@ class Customers(models.Model):
     email=models.EmailField()
     phone_number=models.IntegerField()
     website=models.URLField()
-    state=models.CharField()
-    city=models.CharField()
+    state=models.CharField(max_length=256)
+    city=models.CharField(max_length=256)
     postal_code=models.IntegerField()
     address_1=models.TextField()
     address_2=models.TextField()
@@ -30,30 +30,35 @@ class Products_and_Services(models.Model):
     sac=models.IntegerField()
     Taxes=models.IntegerField()
 
+class Taxes(models.Model):
+    tax_name=models.TextField()
+    abbrevation=models.TextField()
+    tax_rate=models.IntegerField()
+
 class Orders(models.Model):
     name=models.CharField(max_length=256)
     customer=models.ForeignKey(Customers,on_delete=models.CASCADE)
     invoice_date=models.DateField()
     payment_due=models.DateField()
-    service_origin=models.CharField()
-    service_destination=models.CharField()
+    service_origin=models.CharField(max_length=512)
+    service_destination=models.CharField(max_length=512)
     truck_number=models.TextField()
     truck_type=models.TextField()
-    driver_name=models.CharField()
+    driver_name=models.CharField(max_length=256)
     driver_number=models.IntegerField()
     advance_money=models.IntegerField()
     balance_money=models.IntegerField()
     mobile_number=models.IntegerField()
-    supplier_name=models.ForeignKey(Suppliers,default=Suppliers.supplier_name)
-    number_supplier=models.ForeignKey(Suppliers,default=Suppliers.mobile_number)
-    pan_number=models.ForeignKey(Suppliers,default=Suppliers.pan_number)
-    sac=models.ForeignKey(Products_and_Services,default=Products_and_Services.sac)
-    description=models.TextField()
-    service_fee=models.IntegerField()
-    taxes=models.IntegerField()
-    discount=models.IntegerField()
-    total=models.IntegerField()
-    total_in_words=models.TextField()
+    description = models.TextField()
+    service_fee = models.IntegerField()
+    taxes = models.IntegerField()
+    discount = models.IntegerField()
+    total = models.IntegerField()
+    total_in_words = models.TextField()
+    name_supplier= models.ForeignKey(Suppliers, related_name="name_supplier", on_delete=models.CASCADE)
+    number_supplier = models.ForeignKey(Suppliers, related_name="number_supplier", on_delete=models.CASCADE)
+    pan_number = models.ForeignKey(Suppliers, related_name="panNumber", on_delete=models.CASCADE)
+    sac = models.ForeignKey(Products_and_Services, related_name="saca", on_delete=models.CASCADE)
 
 
 
@@ -63,10 +68,11 @@ class Orders(models.Model):
 
 
 
-class Taxes(models.Model):
-    tax_name=models.TextField()
-    abbrevation=models.TextField()
-    tax_rate=models.IntegerField()
+
+
+
+
+
 
 
 
