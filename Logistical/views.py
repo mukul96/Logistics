@@ -6,7 +6,9 @@ def orders(request):
     return (render(request,"order.html",{}))
 
 def customers(request):
-    return (render(request,"customers.html",{}))
+    customer=Customers.objects.all()
+    print(customer)
+    return (render(request,"customers.html",))
 
 def suppliers(request):
     return (render(request,"suppliers.html",{}))
