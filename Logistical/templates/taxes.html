@@ -6,5 +6,12 @@
 </head>
 <body>
 Taxes here please
+{% for t in tax %}
+   <ul>
+    <li>{{ t.abbrevation }}</li>
+    <li>{{ t.tax_name }}</li>
+    <li>{{ t.tax_rate }}</li>
+    </ul>
+{% endfor %}
 </body>
 </html>

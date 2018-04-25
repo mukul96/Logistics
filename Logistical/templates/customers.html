@@ -5,5 +5,20 @@
     <title>Customers</title>
 </head>
 <body>
-Customers here please</body>
+Customers here please
+{% for c in customer %}
+<ul>
+<li>{{ c.address_1 }}</li>
+<li>{{ c.address_2 }}</li>
+<li>{{ c.city }}</li>
+<li>{{ c.email }}</li>
+<li>{{ c.first_name }}</li>
+<li>{{ c.last_name }}</li>
+<li>{{ c.phone_number }}</li>
+<li>{{ c.postal_code }}</li>
+<li>{{ c.state }}</li>
+<li>{{ c.website }}</li>
+</ul>
+{% endfor %}
+</body>
 </html>

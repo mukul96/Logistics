@@ -6,5 +6,13 @@
 </head>
 <body>
 products and services here please
+{% for p in products %}
+   <ul>
+       <li> {{ p.description }}li>
+    <li>{{ p.sac }}</li>
+   <li> {{ p.Taxes }}</li>
+   </ul>
+
+{% endfor %}
 </body>
 </html>

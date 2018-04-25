@@ -6,5 +6,19 @@
 </head>
 <body>
 Suppliers here please
+{% for s in supplier %}
+    <ul>
+    <li>{{ s.address }}</li>
+    <li>{{ s.alternate_number }}</li>
+    <li>{{ s.company_name }}</li>
+    <li>{{ s.mobile_number }}</li>
+    <li>{{ s.no_own_vehicles }}</li>
+    <li>{{ s.pan_number }}</li>
+    <li>{{ s.service_destination }}</li>
+    <li>{{ s.service_origin }}</li>
+    <li> {{ s.supplier_name }}</li>
+    </ul>
+{% endfor %}
+
 </body>
 </html>
