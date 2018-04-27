@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Order page</title>
+</head>
+<body>
+orders here please
+<a href="orders_form/">Add more orders</a>
+{% for o in order %}
+   <ul>
+       <li> {{ o.name }}li>
+    <li>{{ o.customer }}</li>
+   <li> {{ o.invoice_date }}</li>
+   <li> {{ o.payment_due }}li>
+   <li> {{ o.service_origin }}li>
+   <li> {{ o.service_destination }}li>
+   <li> {{ o.truck_number }}li>
+   <li> {{ o.truck_type }}li>
+   <li> {{ o.driver_name }}li>
+   <li> {{ o.driver_number }}li>
+   <li> {{ o.advance_money }}li>
+   <li> {{ o.balance_money }}li>
+   <li> {{ o.mobile_number }}li>
+   <li> {{ o.description }}li>
+   <li> {{ o.service_fee }}li>
+   <li> {{ o.taxes }}li>
+   <li> {{ o.discount }}li>
+   <li> {{ o.total }}li>
+   <li> {{ o.total_in_words }}li>
+   <li> {{ o.name_supplier }}li>
+   <li> {{ o.number_supplier }}li>
+   <li> {{ o.sac }}li>
+   <li> {{ o.pan_number }}li>
+   </ul>
+<a href="orders_form/edit/{{ o.id }}/" >edit</a>
+{% endfor %}
+
+</body>
+</html>

@@ -6,6 +6,7 @@
 </head>
 <body>
 Suppliers here please
+<a href="suppliers_form/">Add more Supplier</a>
 {% for s in supplier %}
     <ul>
     <li>{{ s.address }}</li>
@@ -17,6 +18,8 @@ Suppliers here please
     <li>{{ s.service_destination }}</li>
     <li>{{ s.service_origin }}</li>
     <li> {{ s.supplier_name }}</li>
+    <a href="suppliers_form/edit/{{ s.id }}/" >edit</a>
+
     </ul>
 {% endfor %}
 

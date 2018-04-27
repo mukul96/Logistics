@@ -5,7 +5,8 @@ from django.shortcuts import get_object_or_404
 from django.urls import reverse
 # Create your views here.
 def orders(request):
-    return (render(request,"order.html",{}))
+    order=Orders.objects.all()
+    return (render(request, "orders.html", {'order':order}))
 
 def customers(request):
     customer=Customers.objects.all()
@@ -37,7 +38,7 @@ def tax_form(request):
                # my_model = form.save(commit=False)  # create model, but don't save to database
                # my.model.something = whatever  # if I need to do something before saving it
                Taxes.save()
-               return HttpResponse("taxes added")
+               return redirect(reverse('taxes'))
        else:
            form = TaxesForm
            context_data = {'form': form}
@@ -54,7 +55,7 @@ def products_form(request):
             # my_model = form.save(commit=False)  # create model, but don't save to database
             # my.model.something = whatever  # if I need to do something before saving it
             Products_and_Services.save()
-            return HttpResponse("products_and_services added")
+            return redirect(reverse('products'))
     else:
         form = ProductsForm
         context_data = {'form': form}
@@ -71,7 +72,7 @@ def suppliers_form(request):
             # my_model = form.save(commit=False)  # create model, but don't save to database
             # my.model.something = whatever  # if I need to do something before saving it
             Suppliers.save()
-            return HttpResponse("Suppliers added")
+            return redirect(reverse('suppliers'))
     else:
         form = SuppliersForm
         context_data = {'form': form}
@@ -88,7 +89,7 @@ def customers_form(request):
             # my_model = form.save(commit=False)  # create model, but don't save to database
             # my.model.something = whatever  # if I need to do something before saving it
             Customers.save()
-            return HttpResponse("Customers added")
+            return redirect(reverse('customers'))
     else:
         form = CustomersForm
         context_data = {'form': form}
@@ -105,7 +106,7 @@ def orders_form(request):
             # my_model = form.save(commit=False)  # create model, but don't save to database
             # my.model.something = whatever  # if I need to do something before saving it
             Orders.save()
-            return HttpResponse("Customers added")
+            return redirect(reverse('orders'))
     else:
         form = OrdersForm
         context_data = {'form': form}
@@ -147,10 +148,9 @@ def products_form_edit(request,id):
         return render(request, 'products_form.html', {'form': form})
 
 def suppliers_form_edit(request,id):
-    #print("checking")
+    print("checking")
 
     instance = get_object_or_404(Suppliers, id=id)
-
     print(instance)
     form = SuppliersForm(request.POST or None, instance=instance)
     if form.is_valid():

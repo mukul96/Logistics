@@ -6,6 +6,8 @@
 </head>
 <body>
 Customers here please
+<a href="customers_form/">Add more Customer</a>
+
 {% for c in customer %}
 <ul>
 <li>{{ c.address_1 }}</li>
@@ -19,6 +21,8 @@ Customers here please
 <li>{{ c.state }}</li>
 <li>{{ c.website }}</li>
 </ul>
+    <a href="customers_form/edit/{{ c.id }}/" >edit</a>
+
 {% endfor %}
 </body>
 </html>

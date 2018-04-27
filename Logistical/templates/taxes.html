@@ -6,12 +6,15 @@
 </head>
 <body>
 Taxes here please
+<a href="tax_form/">Add more Tax</a>
+
 {% for t in tax %}
    <ul>
     <li>{{ t.abbrevation }}</li>
     <li>{{ t.tax_name }}</li>
     <li>{{ t.tax_rate }}</li>
     </ul>
+    <a href="tax_form/edit/{{ t.id }}/" >edit</a>
 {% endfor %}
 </body>
 </html>

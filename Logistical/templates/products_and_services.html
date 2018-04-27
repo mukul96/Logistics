@@ -6,13 +6,15 @@
 </head>
 <body>
 products and services here please
+<a href="products_form/">Add more Products</a>
+
 {% for p in products %}
    <ul>
        <li> {{ p.description }}li>
     <li>{{ p.sac }}</li>
    <li> {{ p.Taxes }}</li>
    </ul>
-
+<a href="products_form/edit/{{ p.id }}/" >edit</a>
 {% endfor %}
 </body>
 </html>
