@@ -3,15 +3,21 @@ from Logistical import views
 
 
 urlpatterns=[
-    path('orders/', views.orders),
-    path('customers/', views.customers),
-    path('suppliers/', views.suppliers),
-    path('products_and_services/', views.products_and_services),
-    path('taxes/', views.taxes),
+    path('orders/', views.orders,name='orders'),
+    path('orders/orders_form/',views.orders_form),
+    path('orders/orders_form/edit/<int:id>/',views.orders_form_edit),
+    path('suppliers/', views.suppliers,name='suppliers'),
+    path('suppliers/suppliers_form/', views.suppliers_form),
+    path('suppliers/suppliers_form/edit/<int:id>/', views.suppliers_form_edit),
     path('pod/', views.pod),
-    path('tax_form/',views.tax_form),
-    path('products_form/',views.products_form),
-    path('customers_form/',views.customers_form),
-    path('suppliers_form/',views.suppliers_form),
-    path('orders_form/',views.orders_form),
+    path('taxes/', views.taxes,name='taxes'),
+    path('taxes/tax_form/',views.tax_form,name='tax_form'),
+    path('taxes/tax_form/edit/<int:id>/',views.tax_form_edit),
+    path('products_and_services/', views.products_and_services,name='products'),
+    path('products_and_services/products_form/',views.products_form),
+    path('products_and_services/products_form/edit/<int:id>/',views.products_form_edit),
+    path('customers/', views.customers,name='customers'),
+    path('customers/customers_form/',views.customers_form),
+    path('customers/customers_form/edit/<int:id>/',views.customer_form_edit),
+
 ]

@@ -1,6 +1,8 @@
 from django.shortcuts import render,HttpResponse,redirect
 from .models import Customers,Products_and_Services,Suppliers,Taxes,Orders
 from .forms import *
+from django.shortcuts import get_object_or_404
+from django.urls import reverse
 # Create your views here.
 def orders(request):
     return (render(request,"order.html",{}))
@@ -108,5 +110,63 @@ def orders_form(request):
         form = OrdersForm
         context_data = {'form': form}
         return render(request, 'orders_form.html', context_data)
+
+
+def tax_form_edit(request,id=None):
+    #print("checking")
+
+    instance = get_object_or_404(Taxes, id=id)
+    print(instance)
+    form = TaxesForm(request.POST or None, instance=instance)
+    if form.is_valid():
+        form.save()
+        return redirect(reverse('taxes'))
+    return render(request, 'taxes_form.html', {'form': form})
+
+def customer_form_edit(request,id):
+    #print("checking")
+    if id:
+        instance = get_object_or_404(Customers, id=id)
+        print(instance)
+        form = CustomersForm(request.POST or None, instance=instance)
+        if form.is_valid():
+            form.save()
+            return redirect(reverse('customers'))
+        return render(request, 'customers_form.html', {'form': form})
+
+def products_form_edit(request,id):
+    #print("checking")
+    if id:
+        instance = get_object_or_404(Products_and_Services, id=id)
+        print(instance)
+        form = ProductsForm(request.POST or None, instance=instance)
+        print(form)
+        if form.is_valid():
+            form.save()
+            return redirect(reverse('products'))
+        return render(request, 'products_form.html', {'form': form})
+
+def suppliers_form_edit(request,id):
+    #print("checking")
+
+    instance = get_object_or_404(Suppliers, id=id)
+
+    print(instance)
+    form = SuppliersForm(request.POST or None, instance=instance)
+    if form.is_valid():
+        form.save()
+        return redirect(reverse('suppliers'))
+    return render(request, 'suppliers_form.html', {'form': form})
+
+def orders_form_edit(request,id):
+    #print("checking")
+
+    instance = get_object_or_404(Orders, id=id)
+    print(instance)
+    form = OrdersForm(request.POST or None, instance=instance)
+    if form.is_valid():
+        form.save()
+        return redirect(reverse('orders'))
+    return render(request, 'orders_form.html', {'form': form})
 
 
