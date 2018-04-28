@@ -3,6 +3,7 @@ from Logistical import views
 
 
 urlpatterns=[
+    path('',views.orders),
     path('orders/', views.orders,name='orders'),
     path('orders/orders_form/',views.orders_form),
     path('orders/orders_form/edit/<int:id>/',views.orders_form_edit),

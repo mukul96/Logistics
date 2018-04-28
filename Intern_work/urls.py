@@ -20,5 +20,6 @@ from Logistical  import urls as Logistical_urls
 
 urlpatterns = [
     path('admin/', admin.site.urls),
-    path('Logistical/',include(Logistical_urls)),
+    path('',include(Logistical_urls)),
+    path('',include('django.contrib.auth.urls')),
 ]

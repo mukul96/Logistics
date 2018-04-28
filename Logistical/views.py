@@ -3,31 +3,39 @@ from .models import Customers,Products_and_Services,Suppliers,Taxes,Orders
 from .forms import *
 from django.shortcuts import get_object_or_404
 from django.urls import reverse
+from django.contrib.auth.decorators import login_required
 # Create your views here.
+@login_required(login_url='/login')
 def orders(request):
     order=Orders.objects.all()
     return (render(request, "orders.html", {'order':order}))
 
+@login_required(login_url='/login')
 def customers(request):
     customer=Customers.objects.all()
 
     return (render(request,"customers.html",{'customer':customer}))
 
+@login_required(login_url='/login')
 def suppliers(request):
     supplier=Suppliers.objects.all()
     return (render(request,"suppliers.html",{'supplier':supplier}))
 
+@login_required(login_url='/login')
 def products_and_services(request):
     products=Products_and_Services.objects.all()
     return (render(request,"products_and_services.html",{'products':products}))
 
+@login_required(login_url='/login')
 def taxes(request):
     tax=Taxes.objects.all()
     return (render(request,"taxes.html",{'tax':tax}))
 
+@login_required(login_url='/login')
 def pod(request):
     return (render(request,"pod.html"))
 
+@login_required(login_url='/login')
 def tax_form(request):
        if request.method == 'POST':
            form = TaxesForm(request.POST)
@@ -44,7 +52,7 @@ def tax_form(request):
            context_data = {'form': form}
            return render(request,'taxes_form.html', context_data)
 
-
+@login_required(login_url='/login')
 def products_form(request):
     if request.method == 'POST':
         form = ProductsForm(request.POST)
@@ -61,7 +69,7 @@ def products_form(request):
         context_data = {'form': form}
         return render(request, 'products_form.html', context_data)
 
-
+@login_required(login_url='/login')
 def suppliers_form(request):
     if request.method == 'POST':
         form = SuppliersForm(request.POST)
@@ -78,7 +86,7 @@ def suppliers_form(request):
         context_data = {'form': form}
         return render(request, 'suppliers_form.html', context_data)
 
-
+@login_required(login_url='/login')
 def customers_form(request):
     if request.method == 'POST':
         form = CustomersForm(request.POST)
@@ -95,7 +103,7 @@ def customers_form(request):
         context_data = {'form': form}
         return render(request, 'customers_form.html', context_data)
 
-
+@login_required(login_url='/login')
 def orders_form(request):
     if request.method == 'POST':
         form = OrdersForm(request.POST)
@@ -112,7 +120,7 @@ def orders_form(request):
         context_data = {'form': form}
         return render(request, 'orders_form.html', context_data)
 
-
+@login_required(login_url='/login')
 def tax_form_edit(request,id=None):
     #print("checking")
 
@@ -124,6 +132,7 @@ def tax_form_edit(request,id=None):
         return redirect(reverse('taxes'))
     return render(request, 'taxes_form.html', {'form': form})
 
+@login_required(login_url='/login')
 def customer_form_edit(request,id):
     #print("checking")
     if id:
@@ -135,6 +144,7 @@ def customer_form_edit(request,id):
             return redirect(reverse('customers'))
         return render(request, 'customers_form.html', {'form': form})
 
+@login_required(login_url='/login')
 def products_form_edit(request,id):
     #print("checking")
     if id:
@@ -147,6 +157,7 @@ def products_form_edit(request,id):
             return redirect(reverse('products'))
         return render(request, 'products_form.html', {'form': form})
 
+@login_required(login_url='/login')
 def suppliers_form_edit(request,id):
     print("checking")
 
@@ -158,6 +169,7 @@ def suppliers_form_edit(request,id):
         return redirect(reverse('suppliers'))
     return render(request, 'suppliers_form.html', {'form': form})
 
+@login_required(login_url='/login')
 def orders_form_edit(request,id):
     #print("checking")
 
@@ -169,30 +181,35 @@ def orders_form_edit(request,id):
         return redirect(reverse('orders'))
     return render(request, 'orders_form.html', {'form': form})
 
+@login_required(login_url='/login')
 def tax_delete(request):
     id=request.POST['id']
     instance = get_object_or_404(Taxes, id=id)
     instance.delete()
     return redirect(reverse('taxes'))
 
+@login_required(login_url='/login')
 def suppliers_delete(request):
     id=request.POST['id']
     instance = get_object_or_404(Suppliers, id=id)
     instance.delete()
     return redirect(reverse('suppliers'))
 
+@login_required(login_url='/login')
 def products_delete(request):
     id=request.POST['id']
     instance = get_object_or_404(Products_and_Services, id=id)
     instance.delete()
     return redirect(reverse('products'))
 
+@login_required(login_url='/login')
 def customers_delete(request):
     id=request.POST['id']
     instance = get_object_or_404(Customers, id=id)
     instance.delete()
     return redirect(reverse('customers'))
 
+@login_required(login_url='/login')
 def orders_delete(request):
     id=request.POST['id']
     instance = get_object_or_404(Orders, id=id)
