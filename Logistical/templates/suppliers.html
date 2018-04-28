@@ -1,10 +1,5 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <title>Suppliers</title>
-</head>
-<body>
+{% extends 'base.html' %}
+{% block content %}
 Suppliers here please
 <a href="suppliers_form/">Add more Supplier</a>
 {% for s in supplier %}
@@ -25,6 +20,4 @@ Suppliers here please
     </form>
     </ul>
 {% endfor %}
-
-</body>
-</html>
+{% endblock %}

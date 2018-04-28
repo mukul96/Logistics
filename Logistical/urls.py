@@ -6,7 +6,7 @@ urlpatterns=[
     path('orders/', views.orders,name='orders'),
     path('orders/orders_form/',views.orders_form),
     path('orders/orders_form/edit/<int:id>/',views.orders_form_edit),
-    path('orders/orders_delete/',views.order_delete,nama='orders_delete'),
+    path('orders/orders_delete/',views.orders_delete,name='orders_delete'),
     path('suppliers/', views.suppliers,name='suppliers'),
     path('suppliers/suppliers_form/', views.suppliers_form),
     path('suppliers/suppliers_form/edit/<int:id>/', views.suppliers_form_edit),
