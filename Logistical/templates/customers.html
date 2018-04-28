@@ -22,7 +22,10 @@ Customers here please
 <li>{{ c.website }}</li>
 </ul>
     <a href="customers_form/edit/{{ c.id }}/" >edit</a>
-
+<form action="{% url 'customers_delete' %}" method="post">{% csrf_token %}
+        <input type="hidden" name="id" value={{ c.id }}>
+        <input type="submit" value="delete">
+    </form>
 {% endfor %}
 </body>
 </html>

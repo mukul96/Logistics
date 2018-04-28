@@ -34,6 +34,10 @@ orders here please
    <li> {{ o.pan_number }}li>
    </ul>
 <a href="orders_form/edit/{{ o.id }}/" >edit</a>
+     <form action="{% url 'orders_delete' %}" method="post">{% csrf_token %}
+        <input type="hidden" name="id" value={{ o.id }}>
+        <input type="submit" value="delete">
+    </form>
 {% endfor %}
 
 </body>

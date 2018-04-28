@@ -15,6 +15,10 @@ products and services here please
    <li> {{ p.Taxes }}</li>
    </ul>
 <a href="products_form/edit/{{ p.id }}/" >edit</a>
+     <form action="{% url 'products_delete' %}" method="post">{% csrf_token %}
+        <input type="hidden" name="id" value={{ p.id }}>
+        <input type="submit" value="delete">
+    </form>
 {% endfor %}
 </body>
 </html>

@@ -19,7 +19,10 @@ Suppliers here please
     <li>{{ s.service_origin }}</li>
     <li> {{ s.supplier_name }}</li>
     <a href="suppliers_form/edit/{{ s.id }}/" >edit</a>
-
+    <form action="{% url 'suppliers_delete' %}" method="post">{% csrf_token %}
+        <input type="hidden" name="id" value={{ s.id }}>
+        <input type="submit" value="delete">
+    </form>
     </ul>
 {% endfor %}
 

@@ -169,4 +169,34 @@ def orders_form_edit(request,id):
         return redirect(reverse('orders'))
     return render(request, 'orders_form.html', {'form': form})
 
+def tax_delete(request):
+    id=request.POST['id']
+    instance = get_object_or_404(Taxes, id=id)
+    instance.delete()
+    return redirect(reverse('taxes'))
+
+def suppliers_delete(request):
+    id=request.POST['id']
+    instance = get_object_or_404(Suppliers, id=id)
+    instance.delete()
+    return redirect(reverse('suppliers'))
+
+def products_delete(request):
+    id=request.POST['id']
+    instance = get_object_or_404(Products_and_Services, id=id)
+    instance.delete()
+    return redirect(reverse('products'))
+
+def customers_delete(request):
+    id=request.POST['id']
+    instance = get_object_or_404(Customers, id=id)
+    instance.delete()
+    return redirect(reverse('customers'))
+
+def orders_delete(request):
+    id=request.POST['id']
+    instance = get_object_or_404(Orders, id=id)
+    instance.delete()
+    return redirect(reverse('orders'))
+
 
