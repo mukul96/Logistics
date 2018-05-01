@@ -1,7 +1,384 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="b1f876ac-a793-4fac-8da2-a0966276e794" name="Default" comment="" />
+    <list default="true" id="b1f876ac-a793-4fac-8da2-a0966276e794" name="Default" comment="">
+      <change afterPath="$APPLICATION_CONFIG_DIR$/scratches/scratch.py" afterDir="false" />
+      <change afterPath="$USER_HOME$/.WebStorm2017.2/config/options/applicationLibraries.xml" afterDir="false" />
+      <change afterPath="$USER_HOME$/.WebStorm2017.2/config/options/colors.scheme.xml" afterDir="false" />
+      <change afterPath="$USER_HOME$/.WebStorm2017.2/config/options/filetypes.xml" afterDir="false" />
+      <change afterPath="$USER_HOME$/.WebStorm2017.2/config/options/find.xml" afterDir="false" />
+      <change afterPath="$USER_HOME$/.WebStorm2017.2/config/options/other.xml" afterDir="false" />
+      <change afterPath="$USER_HOME$/.WebStorm2017.2/config/options/runner.layout.xml" afterDir="false" />
+      <change afterPath="$USER_HOME$/.WebStorm2017.2/config/options/statistics.toolbar.clicks.xml" afterDir="false" />
+      <change afterPath="$USER_HOME$/.WebStorm2017.2/config/options/ui.lnf.xml" afterDir="false" />
+      <change afterPath="$USER_HOME$/.WebStorm2017.2/config/options/usage.statistics.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../API/.idea/API.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../API/.idea/misc.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../API/.idea/modules.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../API/.idea/workspace.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../API/API/__init__.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../API/API/settings.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../API/API/urls.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../API/API/wsgi.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../API/db.sqlite3" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../API/manage.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../API/profiles/__init__.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../API/profiles/admin.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../API/profiles/apps.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../API/profiles/migrations/0001_initial.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../API/profiles/migrations/0002_auto_20180402_1525.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../API/profiles/migrations/0003_auto_20180402_2005.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../API/profiles/migrations/__init__.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../API/profiles/models.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../API/profiles/serializers.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../API/profiles/tests.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../API/profiles/urls.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../API/profiles/views.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/dataSources.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../mouse_track/UI_mouse.py" afterDir="false" />
+      <change afterPath="$USER_HOME$/WebstormProjects/Elixir/.idea/jsLibraryMappings.xml" afterDir="false" />
+      <change afterPath="$USER_HOME$/WebstormProjects/Elixir/.idea/misc.xml" afterDir="false" />
+      <change afterPath="$USER_HOME$/WebstormProjects/Elixir/Middleware/index.js" afterDir="false" />
+      <change afterPath="$USER_HOME$/WebstormProjects/Elixir/MoreAboutNode/FizzBuzz/Fizzbuzz.js" afterDir="false" />
+      <change afterPath="$USER_HOME$/WebstormProjects/Elixir/MoreAboutNode/FizzBuzz/input" afterDir="false" />
+      <change afterPath="$USER_HOME$/WebstormProjects/Elixir/MoreAboutNode/FizzBuzz/output" afterDir="false" />
+      <change afterPath="$USER_HOME$/WebstormProjects/Elixir/MoreAboutNode/index.js" afterDir="false" />
+      <change afterPath="$USER_HOME$/WebstormProjects/Elixir/data.js" afterDir="false" />
+      <change afterPath="$USER_HOME$/WebstormProjects/Elixir/first_app/server.js" afterDir="false" />
+      <change afterPath="$USER_HOME$/WebstormProjects/Elixir/hello.js" afterDir="false" />
+      <change afterPath="$USER_HOME$/WebstormProjects/Elixir/helloworld/index.js" afterDir="false" />
+      <change afterPath="$USER_HOME$/WebstormProjects/Elixir/index.html" afterDir="false" />
+      <change afterPath="$USER_HOME$/WebstormProjects/Elixir/node-jsJavascript/app.js" afterDir="false" />
+      <change afterPath="$USER_HOME$/WebstormProjects/Elixir/node-jsJavascript/module1.js" afterDir="false" />
+      <change afterPath="$USER_HOME$/WebstormProjects/Elixir/node-jsJavascript/module2.js" afterDir="false" />
+      <change afterPath="$USER_HOME$/WebstormProjects/Elixir/node-only-routing/app.js" afterDir="false" />
+      <change afterPath="$USER_HOME$/WebstormProjects/Elixir/node-only-routing/index.html" afterDir="false" />
+      <change afterPath="$USER_HOME$/WebstormProjects/Elixir/node-only-routing/login.html" afterDir="false" />
+      <change afterPath="$USER_HOME$/WebstormProjects/Elixir/node-only-routing/server.js" afterDir="false" />
+      <change afterPath="$USER_HOME$/WebstormProjects/Elixir/renderingHtml/index.html" afterDir="false" />
+      <change afterPath="$USER_HOME$/WebstormProjects/Elixir/renderingHtml/server.js" afterDir="false" />
+      <change afterPath="$USER_HOME$/WebstormProjects/Elixir/script.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/vcs.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Intern_work/settings.py" beforeDir="false" afterPath="$PROJECT_DIR$/Intern_work/settings.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Logistical/templates/base.html" beforeDir="false" afterPath="$PROJECT_DIR$/Logistical/templates/base.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Logistical/templates/registration/login.html" beforeDir="false" afterPath="$PROJECT_DIR$/Logistical/templates/registration/login.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/db.sqlite3" beforeDir="false" afterPath="$PROJECT_DIR$/db.sqlite3" afterDir="false" />
+      <change beforePath="$USER_HOME$/blogpost/ABOUT" beforeDir="false" />
+      <change beforePath="$USER_HOME$/blogpost/__init__.py" beforeDir="false" />
+      <change beforePath="$USER_HOME$/blogpost/cache/cache.lock" beforeDir="false" />
+      <change beforePath="$USER_HOME$/blogpost/cache/cache.shelve" beforeDir="false" />
+      <change beforePath="$USER_HOME$/blogpost/controllers/appadmin.py" beforeDir="false" />
+      <change beforePath="$USER_HOME$/blogpost/controllers/default.py" beforeDir="false" />
+      <change beforePath="$USER_HOME$/blogpost/controllers/default.py.1" beforeDir="false" />
+      <change beforePath="$USER_HOME$/blogpost/controllers/default.py.bak" beforeDir="false" />
+      <change beforePath="$USER_HOME$/blogpost/cron/crontab" beforeDir="false" />
+      <change beforePath="$USER_HOME$/blogpost/databases/c8b669d15150d7109e5f7ab36744a5b7_auth_cas.table" beforeDir="false" />
+      <change beforePath="$USER_HOME$/blogpost/databases/c8b669d15150d7109e5f7ab36744a5b7_auth_event.table" beforeDir="false" />
+      <change beforePath="$USER_HOME$/blogpost/databases/c8b669d15150d7109e5f7ab36744a5b7_auth_group.table" beforeDir="false" />
+      <change beforePath="$USER_HOME$/blogpost/databases/c8b669d15150d7109e5f7ab36744a5b7_auth_membership.table" beforeDir="false" />
+      <change beforePath="$USER_HOME$/blogpost/databases/c8b669d15150d7109e5f7ab36744a5b7_auth_permission.table" beforeDir="false" />
+      <change beforePath="$USER_HOME$/blogpost/databases/c8b669d15150d7109e5f7ab36744a5b7_auth_user.table" beforeDir="false" />
+      <change beforePath="$USER_HOME$/blogpost/databases/c8b669d15150d7109e5f7ab36744a5b7_comment.table" beforeDir="false" />
+      <change beforePath="$USER_HOME$/blogpost/databases/c8b669d15150d7109e5f7ab36744a5b7_content.table" beforeDir="false" />
+      <change beforePath="$USER_HOME$/blogpost/databases/c8b669d15150d7109e5f7ab36744a5b7_like.table" beforeDir="false" />
+      <change beforePath="$USER_HOME$/blogpost/databases/c8b669d15150d7109e5f7ab36744a5b7_likes.table" beforeDir="false" />
+      <change beforePath="$USER_HOME$/blogpost/databases/sql.log" beforeDir="false" />
+      <change beforePath="$USER_HOME$/blogpost/databases/storage.sqlite" beforeDir="false" />
+      <change beforePath="$USER_HOME$/blogpost/errors/127.0.0.1.2016-05-14.10-35-46.4084bb42-e161-4efd-9cf2-eed17cd4817f" beforeDir="false" />
+      <change beforePath="$USER_HOME$/blogpost/errors/127.0.0.1.2016-05-14.10-35-56.6826d64e-1d04-4293-8643-8d97c4b64921" beforeDir="false" />
+      <change beforePath="$USER_HOME$/blogpost/errors/127.0.0.1.2016-05-14.10-40-28.f5828a18-458f-454a-bf1c-71060a931837" beforeDir="false" />
+      <change beforePath="$USER_HOME$/blogpost/errors/127.0.0.1.2016-05-14.13-09-20.095fd486-0031-4e0e-9dc4-08334e88f64d" beforeDir="false" />
+      <change beforePath="$USER_HOME$/blogpost/errors/127.0.0.1.2016-05-14.19-06-39.6cd6209f-6c2b-4da9-a51e-8f36642965bd" beforeDir="false" />
+      <change beforePath="$USER_HOME$/blogpost/errors/127.0.0.1.2016-05-14.19-08-29.a0bf6636-e0dd-4b98-8a60-03b4cc6aea4c" beforeDir="false" />
+      <change beforePath="$USER_HOME$/blogpost/errors/127.0.0.1.2016-05-14.19-08-59.0731f6cc-6a95-4b26-8124-8a2c4109b5af" beforeDir="false" />
+      <change beforePath="$USER_HOME$/blogpost/errors/127.0.0.1.2016-05-14.19-10-13.770d8b0f-825e-4e87-9ef4-53ce4c4b4985" beforeDir="false" />
+      <change beforePath="$USER_HOME$/blogpost/errors/127.0.0.1.2016-05-14.19-45-29.1821a450-effd-47e2-84fb-3638af49ee74" beforeDir="false" />
+      <change beforePath="$USER_HOME$/blogpost/errors/127.0.0.1.2016-05-14.20-16-12.bd040a33-768e-4998-9dec-5e61b29f8943" beforeDir="false" />
+      <change beforePath="$USER_HOME$/blogpost/errors/127.0.0.1.2016-05-14.20-18-50.21d132a5-31b6-40e2-9544-24a19a9b8206" beforeDir="false" />
+      <change beforePath="$USER_HOME$/blogpost/errors/127.0.0.1.2016-05-14.20-18-51.c987c7e3-f7bc-4435-b17f-3b1dad71b7aa" beforeDir="false" />
+      <change beforePath="$USER_HOME$/blogpost/errors/127.0.0.1.2016-05-14.20-19-49.c815aa6b-9c0f-4078-864a-5778dd6833e9" beforeDir="false" />
+      <change beforePath="$USER_HOME$/blogpost/errors/127.0.0.1.2016-05-14.20-20-03.aa19ca1f-0392-4895-bb8f-daf77697959d" beforeDir="false" />
+      <change beforePath="$USER_HOME$/blogpost/errors/127.0.0.1.2016-05-14.20-21-03.b8dc617b-1603-42ec-975e-a1d65a713a2c" beforeDir="false" />
+      <change beforePath="$USER_HOME$/blogpost/errors/127.0.0.1.2016-05-14.20-21-06.8afc4619-bee6-4898-a3c1-9fc3a1f3be0b" beforeDir="false" />
+      <change beforePath="$USER_HOME$/blogpost/errors/127.0.0.1.2016-05-14.20-22-14.494dc888-0c40-4448-88e3-427782c7e3d4" beforeDir="false" />
+      <change beforePath="$USER_HOME$/blogpost/errors/127.0.0.1.2016-05-14.20-22-19.385158c2-b653-40ac-8f62-de78bf2f3927" beforeDir="false" />
+      <change beforePath="$USER_HOME$/blogpost/errors/127.0.0.1.2016-05-14.20-22-24.2d352e07-e974-4d44-98e8-fef0233623d5" beforeDir="false" />
+      <change beforePath="$USER_HOME$/blogpost/errors/127.0.0.1.2016-05-14.20-26-58.62802a54-8bfd-4204-8091-c0605c8feab5" beforeDir="false" />
+      <change beforePath="$USER_HOME$/blogpost/errors/127.0.0.1.2016-05-14.20-27-08.2b58dc91-411d-4bd8-9f05-851d5f3ed150" beforeDir="false" />
+      <change beforePath="$USER_HOME$/blogpost/errors/127.0.0.1.2016-05-14.20-31-14.50d9389d-5bb2-4993-8730-faffe76ef929" beforeDir="false" />
+      <change beforePath="$USER_HOME$/blogpost/errors/127.0.0.1.2016-05-14.20-31-16.60230fbd-8f14-4b0f-b362-ba73bb4fd8ed" beforeDir="false" />
+      <change beforePath="$USER_HOME$/blogpost/errors/127.0.0.1.2016-05-14.20-34-41.20e18d73-8f41-4d5c-8efb-af79e2d2faa1" beforeDir="false" />
+      <change beforePath="$USER_HOME$/blogpost/errors/127.0.0.1.2016-05-14.20-35-39.80ab1c84-a2d5-4168-819c-bfcde0eae8fd" beforeDir="false" />
+      <change beforePath="$USER_HOME$/blogpost/errors/127.0.0.1.2016-05-14.20-37-30.c3ae5b8a-1908-4b32-8729-fd2bb0c83d51" beforeDir="false" />
+      <change beforePath="$USER_HOME$/blogpost/errors/127.0.0.1.2016-05-14.20-37-31.b88184e1-8675-4d1f-a61f-933cc4afc058" beforeDir="false" />
+      <change beforePath="$USER_HOME$/blogpost/errors/127.0.0.1.2016-05-14.20-37-32.714563d3-f28d-41c1-bd12-870e11640e9a" beforeDir="false" />
+      <change beforePath="$USER_HOME$/blogpost/errors/127.0.0.1.2016-05-14.20-37-32.80148dae-ed09-4ed6-b160-024cfd0e567e" beforeDir="false" />
+      <change beforePath="$USER_HOME$/blogpost/errors/127.0.0.1.2016-05-14.20-37-32.ed6f24dd-1029-4683-b231-8881209b7e48" beforeDir="false" />
+      <change beforePath="$USER_HOME$/blogpost/errors/127.0.0.1.2016-05-15.00-18-22.6b9295ec-2847-4ae8-9c2f-4a25bdf6472c" beforeDir="false" />
+      <change beforePath="$USER_HOME$/blogpost/errors/127.0.0.1.2016-05-15.00-18-30.d92cfe75-136e-4e4e-85fa-f14382037059" beforeDir="false" />
+      <change beforePath="$USER_HOME$/blogpost/errors/127.0.0.1.2016-05-15.00-23-13.b029a5ab-7bd7-46c4-9721-81627a6ee7e7" beforeDir="false" />
+      <change beforePath="$USER_HOME$/blogpost/errors/127.0.0.1.2016-05-15.00-32-31.d5c3c447-3f6c-48d9-8348-cd4906325dea" beforeDir="false" />
+      <change beforePath="$USER_HOME$/blogpost/errors/127.0.0.1.2016-05-15.00-32-33.8ff5eaf1-19e2-4fac-9e48-f8f56b33cf8f" beforeDir="false" />
+      <change beforePath="$USER_HOME$/blogpost/errors/127.0.0.1.2016-05-15.00-32-33.e47e762c-18f2-4efd-9325-fb50cb40aa98" beforeDir="false" />
+      <change beforePath="$USER_HOME$/blogpost/errors/127.0.0.1.2016-05-15.00-36-13.31acf7a3-797f-4351-b509-68e6221c26e5" beforeDir="false" />
+      <change beforePath="$USER_HOME$/blogpost/errors/127.0.0.1.2016-05-15.01-14-25.c4edf8d1-846e-432a-b41d-d6ec936068aa" beforeDir="false" />
+      <change beforePath="$USER_HOME$/blogpost/errors/127.0.0.1.2016-05-15.01-14-28.09782a57-5a9b-440b-a292-40fb61738617" beforeDir="false" />
+      <change beforePath="$USER_HOME$/blogpost/errors/127.0.0.1.2016-05-15.01-14-33.73564357-e911-41d6-85fe-0c3185f4fe8f" beforeDir="false" />
+      <change beforePath="$USER_HOME$/blogpost/errors/127.0.0.1.2016-05-15.01-25-58.bbc5ac69-36df-474c-a175-d59eba4456ae" beforeDir="false" />
+      <change beforePath="$USER_HOME$/blogpost/errors/127.0.0.1.2016-05-15.01-27-50.6754c2a6-2567-4c8e-95c6-b1cdfd77674e" beforeDir="false" />
+      <change beforePath="$USER_HOME$/blogpost/errors/127.0.0.1.2016-05-15.01-27-53.a4729cdd-d50f-4478-b73c-69582eab33a1" beforeDir="false" />
+      <change beforePath="$USER_HOME$/blogpost/errors/127.0.0.1.2016-05-15.09-43-31.2615143b-0f94-4afc-ac9c-8299a6ce22b6" beforeDir="false" />
+      <change beforePath="$USER_HOME$/blogpost/errors/127.0.0.1.2016-05-15.12-23-50.5a966316-8101-4e4a-a333-c23f596734cd" beforeDir="false" />
+      <change beforePath="$USER_HOME$/blogpost/errors/127.0.0.1.2016-05-15.12-23-55.e153d9ac-4aa4-4fd1-a3b5-b9a2347d5f79" beforeDir="false" />
+      <change beforePath="$USER_HOME$/blogpost/errors/127.0.0.1.2016-05-15.12-24-07.18b343c1-629a-4d0b-80e7-34808459828b" beforeDir="false" />
+      <change beforePath="$USER_HOME$/blogpost/errors/127.0.0.1.2016-05-15.12-24-25.7ead43c5-be5c-4a6f-8298-3b06825a78e6" beforeDir="false" />
+      <change beforePath="$USER_HOME$/blogpost/errors/127.0.0.1.2016-05-15.12-26-37.a0ffd974-5a0e-4972-997f-80aa122282c2" beforeDir="false" />
+      <change beforePath="$USER_HOME$/blogpost/errors/127.0.0.1.2016-05-15.12-39-23.2563f5ea-1163-4f48-b1de-3278c4d06e8e" beforeDir="false" />
+      <change beforePath="$USER_HOME$/blogpost/errors/127.0.0.1.2016-05-15.12-41-39.9e4eaf94-b95a-4adc-92b8-fcbb2cb2e9f4" beforeDir="false" />
+      <change beforePath="$USER_HOME$/blogpost/errors/127.0.0.1.2016-05-15.12-44-15.f5366054-9145-4f67-a86e-8c80c7d127da" beforeDir="false" />
+      <change beforePath="$USER_HOME$/blogpost/errors/127.0.0.1.2016-05-15.13-39-39.739f041c-b6d6-4130-96fa-00285ab1a653" beforeDir="false" />
+      <change beforePath="$USER_HOME$/blogpost/errors/127.0.0.1.2016-05-15.13-42-00.bcd1af53-2d68-4703-9c63-8a3e3a0fefa5" beforeDir="false" />
+      <change beforePath="$USER_HOME$/blogpost/errors/127.0.0.1.2016-05-15.13-43-05.9b98852a-a84b-4234-bc66-b49f272c210a" beforeDir="false" />
+      <change beforePath="$USER_HOME$/blogpost/errors/127.0.0.1.2016-05-15.13-47-42.3b903e95-0ffb-414b-a667-e756884b7b17" beforeDir="false" />
+      <change beforePath="$USER_HOME$/blogpost/errors/127.0.0.1.2016-05-15.14-09-09.8fff9638-c2df-436a-ad08-777abe95f9d1" beforeDir="false" />
+      <change beforePath="$USER_HOME$/blogpost/errors/127.0.0.1.2016-05-15.14-09-50.45f86608-755d-4541-b516-d3204b783f7e" beforeDir="false" />
+      <change beforePath="$USER_HOME$/blogpost/errors/127.0.0.1.2016-05-15.14-11-03.ac316e56-fa1a-4189-86aa-61dc75a0b7cd" beforeDir="false" />
+      <change beforePath="$USER_HOME$/blogpost/errors/127.0.0.1.2016-05-15.14-11-47.350035ac-3095-4a9a-bbd8-e055e14f9a92" beforeDir="false" />
+      <change beforePath="$USER_HOME$/blogpost/errors/127.0.0.1.2016-05-15.14-13-48.b6efbafe-d578-400f-9f2b-924cad005475" beforeDir="false" />
+      <change beforePath="$USER_HOME$/blogpost/errors/127.0.0.1.2016-05-15.14-16-18.fafc8f01-023a-4fcc-b028-16f1437cd143" beforeDir="false" />
+      <change beforePath="$USER_HOME$/blogpost/errors/127.0.0.1.2016-05-15.14-25-59.d2d60416-1ef2-43e7-8e8f-6df364f2896e" beforeDir="false" />
+      <change beforePath="$USER_HOME$/blogpost/errors/127.0.0.1.2016-05-15.14-33-52.d72745ee-8021-4f89-a779-8e5b1e2e04e9" beforeDir="false" />
+      <change beforePath="$USER_HOME$/blogpost/errors/127.0.0.1.2016-05-15.14-36-11.dd272903-c2c4-4cf1-8139-18e680e3aba2" beforeDir="false" />
+      <change beforePath="$USER_HOME$/blogpost/errors/127.0.0.1.2016-05-15.15-59-24.1dba0573-9237-4f64-9329-f44677635ce0" beforeDir="false" />
+      <change beforePath="$USER_HOME$/blogpost/errors/127.0.0.1.2016-05-15.16-00-47.9eaa04f6-fb33-492f-b6db-a4830e02515c" beforeDir="false" />
+      <change beforePath="$USER_HOME$/blogpost/errors/127.0.0.1.2016-05-15.16-57-15.f795e686-305a-4cf9-b5ee-d3495b050440" beforeDir="false" />
+      <change beforePath="$USER_HOME$/blogpost/errors/127.0.0.1.2016-05-15.16-57-17.763f9e9b-d46f-44c7-9795-78b4a759c5c7" beforeDir="false" />
+      <change beforePath="$USER_HOME$/blogpost/errors/127.0.0.1.2016-05-15.16-57-35.94f48f51-2180-460c-b4be-dae618f4674e" beforeDir="false" />
+      <change beforePath="$USER_HOME$/blogpost/errors/127.0.0.1.2016-05-15.17-00-58.7bc12066-bbc0-4f00-a153-922a9953eb81" beforeDir="false" />
+      <change beforePath="$USER_HOME$/blogpost/errors/127.0.0.1.2016-05-15.17-15-22.56bca22f-336e-49f6-a2b6-f835f70f2321" beforeDir="false" />
+      <change beforePath="$USER_HOME$/blogpost/errors/127.0.0.1.2016-05-15.17-15-50.cdc85eac-6f8f-4df7-9dc4-76e9c8c2bb46" beforeDir="false" />
+      <change beforePath="$USER_HOME$/blogpost/errors/127.0.0.1.2016-05-15.17-18-44.41c757ba-7a86-4b18-9d1b-24007ae218b5" beforeDir="false" />
+      <change beforePath="$USER_HOME$/blogpost/errors/127.0.0.1.2016-05-15.17-28-04.08f4b629-ee7a-4f10-b85e-46888309f8e8" beforeDir="false" />
+      <change beforePath="$USER_HOME$/blogpost/errors/127.0.0.1.2016-05-15.17-30-35.795cb915-f02d-4c45-a32d-3f3fd1993645" beforeDir="false" />
+      <change beforePath="$USER_HOME$/blogpost/errors/127.0.0.1.2016-05-15.17-30-35.da5fcc5e-9401-43ba-ab76-5923f326cc11" beforeDir="false" />
+      <change beforePath="$USER_HOME$/blogpost/errors/127.0.0.1.2016-05-15.17-35-22.43b5446f-a8c0-4b92-96e6-c77ff8c2236e" beforeDir="false" />
+      <change beforePath="$USER_HOME$/blogpost/errors/127.0.0.1.2016-05-15.17-38-56.37d1c522-571b-44ae-9ff2-82ee38028b63" beforeDir="false" />
+      <change beforePath="$USER_HOME$/blogpost/errors/127.0.0.1.2016-05-15.17-39-35.3af4b69f-39f3-449a-b5c0-32161c65aad6" beforeDir="false" />
+      <change beforePath="$USER_HOME$/blogpost/errors/127.0.0.1.2016-05-15.17-39-36.3b5e72d7-5ab2-47cf-89b9-7698d5b5cb47" beforeDir="false" />
+      <change beforePath="$USER_HOME$/blogpost/errors/127.0.0.1.2016-05-15.17-39-36.81050271-4869-492b-beec-d1aad09cb485" beforeDir="false" />
+      <change beforePath="$USER_HOME$/blogpost/errors/127.0.0.1.2016-05-15.17-39-36.b2000d59-ae94-4d5d-8370-2139fecdab8b" beforeDir="false" />
+      <change beforePath="$USER_HOME$/blogpost/errors/127.0.0.1.2016-05-15.17-39-37.11b882a1-d285-4bf1-8037-741a6bdcb34d" beforeDir="false" />
+      <change beforePath="$USER_HOME$/blogpost/errors/127.0.0.1.2016-05-15.17-39-37.90b79b50-cdc2-4a0b-b357-5ba3ea72827e" beforeDir="false" />
+      <change beforePath="$USER_HOME$/blogpost/errors/127.0.0.1.2016-05-15.17-39-37.96e1e396-3177-4864-b7fc-27ed37b21e60" beforeDir="false" />
+      <change beforePath="$USER_HOME$/blogpost/errors/127.0.0.1.2016-05-15.17-41-54.c1fe638f-75d7-4d1a-9a7d-f133d93cbe59" beforeDir="false" />
+      <change beforePath="$USER_HOME$/blogpost/errors/127.0.0.1.2016-05-15.17-42-19.6f6a635f-2f0e-4dbf-af7c-99a320e40f09" beforeDir="false" />
+      <change beforePath="$USER_HOME$/blogpost/errors/127.0.0.1.2016-05-15.17-42-20.f258f9a8-5cfb-4b1c-af6d-a020f28f4f0d" beforeDir="false" />
+      <change beforePath="$USER_HOME$/blogpost/errors/127.0.0.1.2016-05-15.18-58-48.bec69d3b-2d85-4a47-b664-737b150a0ea7" beforeDir="false" />
+      <change beforePath="$USER_HOME$/blogpost/errors/127.0.0.1.2016-05-15.19-03-48.cc6118e7-adfa-464b-aec2-74ea042239c2" beforeDir="false" />
+      <change beforePath="$USER_HOME$/blogpost/errors/127.0.0.1.2016-05-15.19-04-08.811ba091-0a81-4407-9b86-38a96b80e977" beforeDir="false" />
+      <change beforePath="$USER_HOME$/blogpost/errors/127.0.0.1.2016-05-15.19-23-19.e59f72b9-b892-48ec-897b-d1e77f00c925" beforeDir="false" />
+      <change beforePath="$USER_HOME$/blogpost/errors/127.0.0.1.2016-05-15.19-41-43.60761492-dba0-4a93-9efe-b7c035d5bbc9" beforeDir="false" />
+      <change beforePath="$USER_HOME$/blogpost/errors/127.0.0.1.2016-05-15.20-08-34.53a9409d-1b41-4c81-bb08-1c5844c172cd" beforeDir="false" />
+      <change beforePath="$USER_HOME$/blogpost/errors/127.0.0.1.2016-05-15.20-09-11.6f2267b7-afa1-4164-8447-fbba648a79f9" beforeDir="false" />
+      <change beforePath="$USER_HOME$/blogpost/errors/127.0.0.1.2016-05-15.20-09-30.2a5a97ec-9df5-45ee-8bbe-6519c75a4358" beforeDir="false" />
+      <change beforePath="$USER_HOME$/blogpost/errors/127.0.0.1.2016-05-15.20-18-00.13dcd57b-96f8-4762-a211-081fdf69d9cd" beforeDir="false" />
+      <change beforePath="$USER_HOME$/blogpost/errors/127.0.0.1.2016-05-15.20-19-13.0c084406-24eb-410d-8bd6-06d224ccbde5" beforeDir="false" />
+      <change beforePath="$USER_HOME$/blogpost/errors/127.0.0.1.2016-05-16.13-04-47.9d92bf6a-8de9-49d5-81b2-026a7bfadc48" beforeDir="false" />
+      <change beforePath="$USER_HOME$/blogpost/errors/127.0.0.1.2016-05-16.13-05-16.2297efbf-eeef-4df8-9b6e-1489c36177b3" beforeDir="false" />
+      <change beforePath="$USER_HOME$/blogpost/errors/127.0.0.1.2016-05-16.13-05-17.146a9328-61fd-49d6-9d97-5a7c76dc4701" beforeDir="false" />
+      <change beforePath="$USER_HOME$/blogpost/errors/127.0.0.1.2016-05-16.13-05-18.a10c512a-3f68-4eb4-83f5-17ac0d1edb01" beforeDir="false" />
+      <change beforePath="$USER_HOME$/blogpost/errors/127.0.0.1.2016-05-16.13-16-23.f9fba4e0-069c-44e1-8dbd-4dd5d3ae62cf" beforeDir="false" />
+      <change beforePath="$USER_HOME$/blogpost/errors/127.0.0.1.2016-05-16.13-16-50.385c9f7d-d3db-4544-836a-33dcfd3dedb2" beforeDir="false" />
+      <change beforePath="$USER_HOME$/blogpost/errors/127.0.0.1.2016-05-16.13-16-51.4590ef17-468a-41f8-99e1-ca7588e7a621" beforeDir="false" />
+      <change beforePath="$USER_HOME$/blogpost/errors/127.0.0.1.2016-05-16.13-17-49.bb01b6cc-eb04-4331-b346-74b9a1441d98" beforeDir="false" />
+      <change beforePath="$USER_HOME$/blogpost/errors/127.0.0.1.2016-05-16.13-18-07.3196266d-f6be-42e4-9ac2-df9bb4dad9db" beforeDir="false" />
+      <change beforePath="$USER_HOME$/blogpost/errors/127.0.0.1.2016-05-16.13-18-08.acf1737d-5340-42d0-bffb-4d8ca05c58a6" beforeDir="false" />
+      <change beforePath="$USER_HOME$/blogpost/errors/127.0.0.1.2016-05-16.13-23-43.ab6a87d7-a3d5-4ba0-b96b-59f11f95cbfc" beforeDir="false" />
+      <change beforePath="$USER_HOME$/blogpost/errors/127.0.0.1.2016-05-16.13-29-29.99b900dc-dc4a-4faa-a0f8-e4c47501a4a0" beforeDir="false" />
+      <change beforePath="$USER_HOME$/blogpost/errors/127.0.0.1.2016-05-16.13-29-41.51bc3ad3-ef87-47e1-b494-8998ef360867" beforeDir="false" />
+      <change beforePath="$USER_HOME$/blogpost/errors/127.0.0.1.2016-05-16.13-30-25.b9298d24-4cc7-4516-ac16-159f84d3ac92" beforeDir="false" />
+      <change beforePath="$USER_HOME$/blogpost/errors/127.0.0.1.2016-05-16.13-30-26.a2d56bf6-5d92-4422-b882-0c857b76e59f" beforeDir="false" />
+      <change beforePath="$USER_HOME$/blogpost/errors/127.0.0.1.2016-05-16.13-30-46.3b107df3-1300-4d7f-9f75-0bd3a869c91c" beforeDir="false" />
+      <change beforePath="$USER_HOME$/blogpost/errors/127.0.0.1.2016-05-16.14-12-44.6afb5de1-fa05-4d01-80f9-53d7ee06c24d" beforeDir="false" />
+      <change beforePath="$USER_HOME$/blogpost/errors/127.0.0.1.2016-05-16.14-13-11.e2a60e28-5c5f-4127-857b-b7aac92edb49" beforeDir="false" />
+      <change beforePath="$USER_HOME$/blogpost/errors/127.0.0.1.2016-05-16.14-15-12.d5b77363-524e-434e-b844-964e61a1f6f2" beforeDir="false" />
+      <change beforePath="$USER_HOME$/blogpost/errors/127.0.0.1.2016-05-16.14-26-34.6225e2ac-80fb-4ab3-a340-48c1de890e13" beforeDir="false" />
+      <change beforePath="$USER_HOME$/blogpost/errors/127.0.0.1.2016-05-16.14-30-32.86c0273a-73f6-4d4e-8532-06075e87bbee" beforeDir="false" />
+      <change beforePath="$USER_HOME$/blogpost/errors/127.0.0.1.2016-05-16.14-35-40.860f9f48-650e-4ab8-9bc1-38920b8f1ba3" beforeDir="false" />
+      <change beforePath="$USER_HOME$/blogpost/errors/127.0.0.1.2016-05-16.14-35-59.be8d826a-5d9b-4157-b68d-5e093d1f69e0" beforeDir="false" />
+      <change beforePath="$USER_HOME$/blogpost/errors/127.0.0.1.2016-05-16.16-29-05.82ced75b-8d43-4d51-927d-0f3966f473cf" beforeDir="false" />
+      <change beforePath="$USER_HOME$/blogpost/errors/127.0.0.1.2016-05-16.16-29-07.0043eacb-7740-4bac-aa12-91f1179abfd1" beforeDir="false" />
+      <change beforePath="$USER_HOME$/blogpost/errors/127.0.0.1.2016-05-16.16-30-39.d78f04bf-6910-4d30-aaa7-d8e9f95eb505" beforeDir="false" />
+      <change beforePath="$USER_HOME$/blogpost/errors/127.0.0.1.2016-05-16.16-31-06.c25ab45b-49b4-4517-bd67-9c84a94719a9" beforeDir="false" />
+      <change beforePath="$USER_HOME$/blogpost/errors/127.0.0.1.2016-05-16.16-31-28.5f5421c3-5fb7-4044-8e4d-87d2a3e30ec9" beforeDir="false" />
+      <change beforePath="$USER_HOME$/blogpost/errors/127.0.0.1.2016-05-16.16-31-30.341cd9f1-a726-4b60-9b36-6c8ead525a93" beforeDir="false" />
+      <change beforePath="$USER_HOME$/blogpost/errors/127.0.0.1.2016-05-16.16-31-31.2506830d-044c-4731-a003-f04714a147c6" beforeDir="false" />
+      <change beforePath="$USER_HOME$/blogpost/errors/127.0.0.1.2016-05-16.16-31-31.615c3b15-9214-4176-99d0-aedfc1c78c55" beforeDir="false" />
+      <change beforePath="$USER_HOME$/blogpost/errors/127.0.0.1.2016-05-16.16-31-31.8405d6a3-bd3e-49ca-926b-3e1d005c502b" beforeDir="false" />
+      <change beforePath="$USER_HOME$/blogpost/errors/127.0.0.1.2016-05-16.16-31-32.31110eca-2b65-4c2b-ba6e-61f9e310d095" beforeDir="false" />
+      <change beforePath="$USER_HOME$/blogpost/errors/127.0.0.1.2016-05-16.16-34-08.00012719-4a04-49a3-ada8-76c6b6928c42" beforeDir="false" />
+      <change beforePath="$USER_HOME$/blogpost/errors/127.0.0.1.2016-05-16.16-34-33.4fc233c3-0f70-476b-b7fe-f5c46e1e92d5" beforeDir="false" />
+      <change beforePath="$USER_HOME$/blogpost/errors/127.0.0.1.2016-05-16.16-34-46.97e07800-81ef-49df-aa0c-9636689adabb" beforeDir="false" />
+      <change beforePath="$USER_HOME$/blogpost/errors/127.0.0.1.2016-05-16.16-37-02.9439c1c8-e997-4ca5-9e1a-8dd1c2db59d4" beforeDir="false" />
+      <change beforePath="$USER_HOME$/blogpost/errors/127.0.0.1.2016-05-16.16-38-59.cfde7624-85de-49bd-8a8e-172023adb868" beforeDir="false" />
+      <change beforePath="$USER_HOME$/blogpost/errors/127.0.0.1.2016-05-16.16-39-01.352bc158-cf09-43ba-a4ee-1539bd6c6ad4" beforeDir="false" />
+      <change beforePath="$USER_HOME$/blogpost/errors/127.0.0.1.2016-05-16.16-40-48.7478de44-cb90-4bad-8371-e2be60a58364" beforeDir="false" />
+      <change beforePath="$USER_HOME$/blogpost/errors/127.0.0.1.2016-05-16.16-40-49.589197fb-3f4d-44b2-a425-dfd828d092f5" beforeDir="false" />
+      <change beforePath="$USER_HOME$/blogpost/errors/127.0.0.1.2016-05-16.16-43-21.f63f327d-0beb-48b2-91b6-66fb97b1c608" beforeDir="false" />
+      <change beforePath="$USER_HOME$/blogpost/errors/127.0.0.1.2016-05-16.16-57-28.4fa5d564-b355-4669-a802-b917cb5b3334" beforeDir="false" />
+      <change beforePath="$USER_HOME$/blogpost/errors/127.0.0.1.2016-05-16.16-58-00.cdaa9d6c-e132-4e68-b0a1-173f6c36ba65" beforeDir="false" />
+      <change beforePath="$USER_HOME$/blogpost/errors/127.0.0.1.2016-05-16.16-58-01.67b5ad42-dcc9-4f31-be96-fffcbb007454" beforeDir="false" />
+      <change beforePath="$USER_HOME$/blogpost/errors/127.0.0.1.2016-05-16.17-03-38.0eee71a4-4e3b-4eb1-bd90-18b4956dea41" beforeDir="false" />
+      <change beforePath="$USER_HOME$/blogpost/errors/127.0.0.1.2016-05-16.17-08-42.501602b5-eaf7-40fa-ad3b-0c10fd7ea4a5" beforeDir="false" />
+      <change beforePath="$USER_HOME$/blogpost/errors/127.0.0.1.2016-05-16.17-38-24.f7d32a51-f4fd-4ab3-b6b2-0e59fdab5bf8" beforeDir="false" />
+      <change beforePath="$USER_HOME$/blogpost/errors/127.0.0.1.2016-05-16.17-38-26.494e3b5d-8f97-4fa5-bf1e-1b0ae0f73f8f" beforeDir="false" />
+      <change beforePath="$USER_HOME$/blogpost/errors/127.0.0.1.2016-05-16.17-38-26.b8672646-2dcd-4154-bf27-589d64bff78b" beforeDir="false" />
+      <change beforePath="$USER_HOME$/blogpost/errors/127.0.0.1.2016-05-16.17-38-27.844d89db-697f-4a05-a4d3-d281e2b81676" beforeDir="false" />
+      <change beforePath="$USER_HOME$/blogpost/errors/127.0.0.1.2016-05-16.17-38-28.9e481873-87f8-4bd2-a387-9bef6064d2d3" beforeDir="false" />
+      <change beforePath="$USER_HOME$/blogpost/errors/127.0.0.1.2016-05-16.17-39-19.26aab1cd-2bc8-4d71-99b8-bc8a6763e27d" beforeDir="false" />
+      <change beforePath="$USER_HOME$/blogpost/errors/127.0.0.1.2016-05-16.17-39-24.a60a481b-6a36-4644-8ac9-52e6d11ce72d" beforeDir="false" />
+      <change beforePath="$USER_HOME$/blogpost/errors/127.0.0.1.2016-05-16.17-47-04.2adffe5f-50d8-43b1-8a9e-cefcc566fc47" beforeDir="false" />
+      <change beforePath="$USER_HOME$/blogpost/errors/127.0.0.1.2016-05-16.17-47-35.2f8fe4b6-c377-422e-89c3-6ddd31603435" beforeDir="false" />
+      <change beforePath="$USER_HOME$/blogpost/errors/127.0.0.1.2016-05-16.17-47-37.49a4a800-65f7-404f-bd85-2d52be49d237" beforeDir="false" />
+      <change beforePath="$USER_HOME$/blogpost/errors/127.0.0.1.2016-05-16.17-48-10.34f9c40e-01e8-4156-8a24-2b050ff6d544" beforeDir="false" />
+      <change beforePath="$USER_HOME$/blogpost/errors/127.0.0.1.2016-05-16.17-48-37.4c051500-c422-457e-a9b0-2903ed22ae98" beforeDir="false" />
+      <change beforePath="$USER_HOME$/blogpost/errors/127.0.0.1.2016-05-16.17-49-27.4fbcb56f-f7d0-4dca-98dc-cc4773e6934e" beforeDir="false" />
+      <change beforePath="$USER_HOME$/blogpost/errors/127.0.0.1.2016-05-16.17-49-28.67ca1b4f-32cc-4424-980d-602ce64ae3d9" beforeDir="false" />
+      <change beforePath="$USER_HOME$/blogpost/errors/127.0.0.1.2016-05-16.17-49-29.6e3b7294-5c15-434f-8e17-8c853699872b" beforeDir="false" />
+      <change beforePath="$USER_HOME$/blogpost/errors/127.0.0.1.2016-05-16.17-49-29.7121b364-86f7-4eed-82db-2abab824ce3a" beforeDir="false" />
+      <change beforePath="$USER_HOME$/blogpost/errors/127.0.0.1.2016-05-16.19-41-33.4ffbc5b3-e887-4453-acf2-830e87b2bc78" beforeDir="false" />
+      <change beforePath="$USER_HOME$/blogpost/errors/127.0.0.1.2016-05-16.20-05-19.6fcf5c8c-5a37-4981-adfd-ee080e98a9c0" beforeDir="false" />
+      <change beforePath="$USER_HOME$/blogpost/errors/127.0.0.1.2016-05-16.20-05-57.5a168150-034c-4081-991f-2ea3588284f6" beforeDir="false" />
+      <change beforePath="$USER_HOME$/blogpost/errors/127.0.0.1.2016-05-16.20-05-59.72cd54b9-9ef5-4ba4-95c2-16bba8410c69" beforeDir="false" />
+      <change beforePath="$USER_HOME$/blogpost/errors/127.0.0.1.2016-05-16.20-17-59.11f40fc9-2973-451e-8bb5-4098c79d8eab" beforeDir="false" />
+      <change beforePath="$USER_HOME$/blogpost/errors/127.0.0.1.2016-05-16.20-25-31.c769d12c-e484-4a2e-9ef0-2f760cfa60d6" beforeDir="false" />
+      <change beforePath="$USER_HOME$/blogpost/errors/127.0.0.1.2016-05-16.20-26-00.6e68c5f8-1c09-4143-9ca3-5f5423d1940f" beforeDir="false" />
+      <change beforePath="$USER_HOME$/blogpost/errors/127.0.0.1.2016-05-17.00-12-00.5cb9611d-55bc-4c69-a425-cd5a57965873" beforeDir="false" />
+      <change beforePath="$USER_HOME$/blogpost/errors/127.0.0.1.2016-05-17.13-01-11.8f32bd2b-1ff4-4ee1-be15-0b05a5f61754" beforeDir="false" />
+      <change beforePath="$USER_HOME$/blogpost/errors/127.0.0.1.2016-05-17.13-02-10.196dabf2-2031-4b01-b659-1cc461e11085" beforeDir="false" />
+      <change beforePath="$USER_HOME$/blogpost/errors/127.0.0.1.2016-05-17.13-06-09.733ae457-5827-41ff-ae7f-d4883001114a" beforeDir="false" />
+      <change beforePath="$USER_HOME$/blogpost/errors/127.0.0.1.2016-05-17.16-39-06.35d7928e-4fb7-4667-8b93-751bf6b1b3d3" beforeDir="false" />
+      <change beforePath="$USER_HOME$/blogpost/errors/127.0.0.1.2016-05-17.16-41-37.aa3fdaa9-ac08-42b9-9b15-f554d3fa8c31" beforeDir="false" />
+      <change beforePath="$USER_HOME$/blogpost/errors/127.0.0.1.2016-05-17.16-42-24.f34255d7-c2a4-428a-9a39-f2d85d434da5" beforeDir="false" />
+      <change beforePath="$USER_HOME$/blogpost/errors/127.0.0.1.2016-05-17.17-23-47.f3e8de87-df06-4dc7-aeba-6b2acef418a2" beforeDir="false" />
+      <change beforePath="$USER_HOME$/blogpost/errors/127.0.0.1.2016-05-17.17-24-37.ca651d69-c1fd-44ee-b0f1-64130a8b910f" beforeDir="false" />
+      <change beforePath="$USER_HOME$/blogpost/errors/127.0.0.1.2016-05-17.17-30-14.3faf4115-89b0-48b9-97ab-d82a2dd647ed" beforeDir="false" />
+      <change beforePath="$USER_HOME$/blogpost/errors/127.0.0.1.2016-05-17.17-32-40.d7431ce5-9059-4313-8e61-679d439bc96d" beforeDir="false" />
+      <change beforePath="$USER_HOME$/blogpost/errors/127.0.0.1.2016-05-17.19-16-37.6f994fbb-06a9-4619-b1a5-a1a794533a25" beforeDir="false" />
+      <change beforePath="$USER_HOME$/blogpost/errors/127.0.0.1.2016-05-17.19-32-41.c72343bd-299a-4cb8-9196-6767228c08e0" beforeDir="false" />
+      <change beforePath="$USER_HOME$/blogpost/errors/127.0.0.1.2016-05-17.19-43-37.cb478751-441e-41c7-a569-8f0f157ef0c9" beforeDir="false" />
+      <change beforePath="$USER_HOME$/blogpost/errors/127.0.0.1.2016-05-17.19-45-09.171b88eb-58d5-4aad-907d-7926145168bd" beforeDir="false" />
+      <change beforePath="$USER_HOME$/blogpost/errors/127.0.0.1.2016-05-17.19-47-02.228599ff-843e-4547-b2c3-9a9ec9fc8a62" beforeDir="false" />
+      <change beforePath="$USER_HOME$/blogpost/errors/127.0.0.1.2016-05-17.20-01-48.0eb8defa-06bd-483f-8c45-aa8565c9b1c6" beforeDir="false" />
+      <change beforePath="$USER_HOME$/blogpost/errors/127.0.0.1.2016-05-18.13-28-26.8f1e36c1-d7bf-475a-97f0-8fec8442fd36" beforeDir="false" />
+      <change beforePath="$USER_HOME$/blogpost/errors/127.0.0.1.2016-05-18.13-29-02.8e98bb21-26a7-4df7-b9e5-c6a644fe72c9" beforeDir="false" />
+      <change beforePath="$USER_HOME$/blogpost/errors/127.0.0.1.2016-05-18.13-29-04.820c5133-4b79-4460-86e4-93a102bd33ff" beforeDir="false" />
+      <change beforePath="$USER_HOME$/blogpost/errors/127.0.0.1.2016-05-18.13-32-15.9bbbd195-ede3-45d5-8734-44f59aedd47e" beforeDir="false" />
+      <change beforePath="$USER_HOME$/blogpost/errors/127.0.0.1.2016-05-18.13-36-37.7a82e481-e267-4209-8c30-8247ae3734b8" beforeDir="false" />
+      <change beforePath="$USER_HOME$/blogpost/errors/127.0.0.1.2016-05-27.23-28-08.f85270fd-85f1-4cb2-add9-d813a81f14c8" beforeDir="false" />
+      <change beforePath="$USER_HOME$/blogpost/errors/127.0.0.1.2016-05-27.23-29-11.d7468771-14de-47f6-8a0d-02e0db31f92a" beforeDir="false" />
+      <change beforePath="$USER_HOME$/blogpost/errors/127.0.0.1.2016-05-27.23-32-04.f06001d4-8698-4075-b007-591f3e8c52b2" beforeDir="false" />
+      <change beforePath="$USER_HOME$/blogpost/errors/127.0.0.1.2016-05-27.23-32-53.a1794a18-cb19-488b-b15e-80cf7e5cc4e7" beforeDir="false" />
+      <change beforePath="$USER_HOME$/blogpost/errors/127.0.0.1.2016-05-27.23-56-27.f63b969b-4ff9-4a9b-857d-252356f965c3" beforeDir="false" />
+      <change beforePath="$USER_HOME$/blogpost/errors/127.0.0.1.2016-05-28.22-59-14.75cd81f3-1353-4ba8-a5c8-0f000301b7ac" beforeDir="false" />
+      <change beforePath="$USER_HOME$/blogpost/errors/127.0.0.1.2016-05-28.23-39-08.91bc86ed-3f31-4cff-b23a-1901f5111e5f" beforeDir="false" />
+      <change beforePath="$USER_HOME$/blogpost/errors/127.0.0.1.2016-05-29.00-04-44.83729bd4-3845-4433-9ef3-db56b8d203fe" beforeDir="false" />
+      <change beforePath="$USER_HOME$/blogpost/errors/127.0.0.1.2016-05-29.00-13-26.18d1c800-7d65-4b60-b31e-01b8ecd7b70a" beforeDir="false" />
+      <change beforePath="$USER_HOME$/blogpost/errors/127.0.0.1.2016-05-29.00-14-19.d6a732b4-6439-4c32-b8b4-8c746618958b" beforeDir="false" />
+      <change beforePath="$USER_HOME$/blogpost/errors/127.0.0.1.2016-05-29.00-14-23.c1e9d1a6-7915-41c1-a966-dd9bf5ae17ba" beforeDir="false" />
+      <change beforePath="$USER_HOME$/blogpost/errors/127.0.0.1.2016-05-29.00-29-23.13f094cd-000c-4ecd-868d-0276b72efff9" beforeDir="false" />
+      <change beforePath="$USER_HOME$/blogpost/errors/127.0.0.1.2016-05-29.00-29-47.f8099db9-535a-4932-9fce-15ccb510a478" beforeDir="false" />
+      <change beforePath="$USER_HOME$/blogpost/errors/127.0.0.1.2016-05-29.00-30-40.f52ea22a-87e0-48c4-ba6f-09d0c1663519" beforeDir="false" />
+      <change beforePath="$USER_HOME$/blogpost/errors/127.0.0.1.2016-05-29.00-32-25.a931cbfd-9868-42fe-a4ff-a9750afc11d4" beforeDir="false" />
+      <change beforePath="$USER_HOME$/blogpost/errors/127.0.0.1.2016-05-29.00-34-24.00f1220f-b0b0-4e1e-aa43-c50b24ab32b3" beforeDir="false" />
+      <change beforePath="$USER_HOME$/blogpost/errors/127.0.0.1.2016-05-29.01-02-00.9c175e8e-b0b4-4d59-ab7f-192c16f18180" beforeDir="false" />
+      <change beforePath="$USER_HOME$/blogpost/errors/127.0.0.1.2016-05-29.01-02-02.c7b317d9-a7c1-4562-bbb0-5df5168f5f23" beforeDir="false" />
+      <change beforePath="$USER_HOME$/blogpost/errors/127.0.0.1.2016-05-29.01-30-49.b5e876a4-af80-4dea-b841-1dcd49bf127a" beforeDir="false" />
+      <change beforePath="$USER_HOME$/blogpost/errors/127.0.0.1.2016-05-29.01-31-41.16b151d2-4303-4a85-8b80-939181a84da5" beforeDir="false" />
+      <change beforePath="$USER_HOME$/blogpost/errors/127.0.0.1.2016-05-29.01-35-21.0b68b757-23a4-4614-b2ac-ef54b45d2f0e" beforeDir="false" />
+      <change beforePath="$USER_HOME$/blogpost/errors/127.0.0.1.2016-05-29.01-37-18.e0ceb8fd-907c-4074-a5cc-cb4273210e18" beforeDir="false" />
+      <change beforePath="$USER_HOME$/blogpost/languages/cs-cz.py" beforeDir="false" />
+      <change beforePath="$USER_HOME$/blogpost/languages/es-es.py" beforeDir="false" />
+      <change beforePath="$USER_HOME$/blogpost/languages/fr-ca.py" beforeDir="false" />
+      <change beforePath="$USER_HOME$/blogpost/languages/fr-fr.py" beforeDir="false" />
+      <change beforePath="$USER_HOME$/blogpost/languages/hi-hi.py" beforeDir="false" />
+      <change beforePath="$USER_HOME$/blogpost/languages/hu-hu.py" beforeDir="false" />
+      <change beforePath="$USER_HOME$/blogpost/languages/hu.py" beforeDir="false" />
+      <change beforePath="$USER_HOME$/blogpost/languages/it-it.py" beforeDir="false" />
+      <change beforePath="$USER_HOME$/blogpost/languages/it.py" beforeDir="false" />
+      <change beforePath="$USER_HOME$/blogpost/languages/pl-pl.py" beforeDir="false" />
+      <change beforePath="$USER_HOME$/blogpost/languages/pl.py" beforeDir="false" />
+      <change beforePath="$USER_HOME$/blogpost/languages/pt-br.py" beforeDir="false" />
+      <change beforePath="$USER_HOME$/blogpost/languages/pt-pt.py" beforeDir="false" />
+      <change beforePath="$USER_HOME$/blogpost/languages/pt.py" beforeDir="false" />
+      <change beforePath="$USER_HOME$/blogpost/languages/ru-ru.py" beforeDir="false" />
+      <change beforePath="$USER_HOME$/blogpost/languages/sk-sk.py" beforeDir="false" />
+      <change beforePath="$USER_HOME$/blogpost/languages/zh-tw.py" beforeDir="false" />
+      <change beforePath="$USER_HOME$/blogpost/models/db.py" beforeDir="false" />
+      <change beforePath="$USER_HOME$/blogpost/models/db.py.bak" beforeDir="false" />
+      <change beforePath="$USER_HOME$/blogpost/models/menu.py" beforeDir="false" />
+      <change beforePath="$USER_HOME$/blogpost/modules/__init__.py" beforeDir="false" />
+      <change beforePath="$USER_HOME$/blogpost/private/auth.key" beforeDir="false" />
+      <change beforePath="$USER_HOME$/blogpost/progress.log" beforeDir="false" />
+      <change beforePath="$USER_HOME$/blogpost/sessions/03f/0e8/127.0.0.1-99c1b0cb-c10e-423a-91d0-9da1fc813b52" beforeDir="false" />
+      <change beforePath="$USER_HOME$/blogpost/sessions/062/144/127.0.0.1-4f36b5c7-4a5d-4c62-8ccf-97a1aa18e2bb" beforeDir="false" />
+      <change beforePath="$USER_HOME$/blogpost/sessions/08d/128/127.0.0.1-bf59c7c1-e7b6-41ce-81de-2cfd1d7a4cdd" beforeDir="false" />
+      <change beforePath="$USER_HOME$/blogpost/sessions/08e/092/127.0.0.1-2875d371-c5ff-44ae-b22a-272ae74d0259" beforeDir="false" />
+      <change beforePath="$USER_HOME$/blogpost/sessions/0f8/17e/127.0.0.1-ab445ed4-4daa-4532-84eb-ddd67cdf65eb" beforeDir="false" />
+      <change beforePath="$USER_HOME$/blogpost/sessions/127.0.0.1-b569b386-3d87-495a-87ca-89d8024aabab" beforeDir="false" />
+      <change beforePath="$USER_HOME$/blogpost/sessions/127.0.0.1-bcd64a48-cdf0-42c4-b6ce-38fdcd520e45" beforeDir="false" />
+      <change beforePath="$USER_HOME$/blogpost/sessions/127.0.0.1-db0d4806-b3c3-4347-967a-d3847597ee73" beforeDir="false" />
+      <change beforePath="$USER_HOME$/blogpost/sessions/140/1ec/127.0.0.1-d05a4bbd-ac80-4ca0-8deb-025f087f6c1a" beforeDir="false" />
+      <change beforePath="$USER_HOME$/blogpost/sessions/192/018/127.0.0.1-437a7e06-7ee8-4693-bb4a-793e3dd807a6" beforeDir="false" />
+      <change beforePath="$USER_HOME$/blogpost/sessions/1c8/01a/127.0.0.1-0f60bcc3-fdd4-49e5-8111-6b53afc160a7" beforeDir="false" />
+      <change beforePath="$USER_HOME$/blogpost/sessions/1f7/1df/127.0.0.1-a3ad3327-f19f-4014-ba3a-30a7ea3ba734" beforeDir="false" />
+      <change beforePath="$USER_HOME$/blogpost/static/css/calendar.css" beforeDir="false" />
+      <change beforePath="$USER_HOME$/blogpost/static/css/skeleton.css" beforeDir="false" />
+      <change beforePath="$USER_HOME$/blogpost/static/css/superfish.css" beforeDir="false" />
+      <change beforePath="$USER_HOME$/blogpost/static/css/web2py.css" beforeDir="false" />
+      <change beforePath="$USER_HOME$/blogpost/static/favicon.ico" beforeDir="false" />
+      <change beforePath="$USER_HOME$/blogpost/static/favicon.png" beforeDir="false" />
+      <change beforePath="$USER_HOME$/blogpost/static/images/arrows-ffffff.png" beforeDir="false" />
+      <change beforePath="$USER_HOME$/blogpost/static/images/css3buttons_backgrounds.png" beforeDir="false" />
+      <change beforePath="$USER_HOME$/blogpost/static/images/css3buttons_icons.png" beforeDir="false" />
+      <change beforePath="$USER_HOME$/blogpost/static/images/poweredby.png" beforeDir="false" />
+      <change beforePath="$USER_HOME$/blogpost/static/images/shadow.png" beforeDir="false" />
+      <change beforePath="$USER_HOME$/blogpost/static/images/ui-icons_222222_256x240.png" beforeDir="false" />
+      <change beforePath="$USER_HOME$/blogpost/static/js/calendar.js" beforeDir="false" />
+      <change beforePath="$USER_HOME$/blogpost/static/js/dd_belatedpng.js" beforeDir="false" />
+      <change beforePath="$USER_HOME$/blogpost/static/js/modernizr.custom.js" beforeDir="false" />
+      <change beforePath="$USER_HOME$/blogpost/static/js/superfish.js" beforeDir="false" />
+      <change beforePath="$USER_HOME$/blogpost/static/js/web2py.js" beforeDir="false" />
+      <change beforePath="$USER_HOME$/blogpost/static/robots.txt" beforeDir="false" />
+      <change beforePath="$USER_HOME$/blogpost/views/__init__.py" beforeDir="false" />
+      <change beforePath="$USER_HOME$/blogpost/views/_default/show.html.bak" beforeDir="false" />
+      <change beforePath="$USER_HOME$/blogpost/views/appadmin.html" beforeDir="false" />
+      <change beforePath="$USER_HOME$/blogpost/views/default/add_blog_post.html" beforeDir="false" />
+      <change beforePath="$USER_HOME$/blogpost/views/default/add_blog_post.html.bak" beforeDir="false" />
+      <change beforePath="$USER_HOME$/blogpost/views/default/add_comment.html" beforeDir="false" />
+      <change beforePath="$USER_HOME$/blogpost/views/default/add_comment.html.bak" beforeDir="false" />
+      <change beforePath="$USER_HOME$/blogpost/views/default/edit_blog.html" beforeDir="false" />
+      <change beforePath="$USER_HOME$/blogpost/views/default/edit_blog.html.1" beforeDir="false" />
+      <change beforePath="$USER_HOME$/blogpost/views/default/edit_blog.html.bak" beforeDir="false" />
+      <change beforePath="$USER_HOME$/blogpost/views/default/index.html" beforeDir="false" />
+      <change beforePath="$USER_HOME$/blogpost/views/default/index.html.bak" beforeDir="false" />
+      <change beforePath="$USER_HOME$/blogpost/views/default/show.html" beforeDir="false" />
+      <change beforePath="$USER_HOME$/blogpost/views/default/show.html.bak" beforeDir="false" />
+      <change beforePath="$USER_HOME$/blogpost/views/default/show_all.html" beforeDir="false" />
+      <change beforePath="$USER_HOME$/blogpost/views/default/show_all.html.bak" beforeDir="false" />
+      <change beforePath="$USER_HOME$/blogpost/views/default/user.html" beforeDir="false" />
+      <change beforePath="$USER_HOME$/blogpost/views/generic.html" beforeDir="false" />
+      <change beforePath="$USER_HOME$/blogpost/views/generic.json" beforeDir="false" />
+      <change beforePath="$USER_HOME$/blogpost/views/generic.jsonp" beforeDir="false" />
+      <change beforePath="$USER_HOME$/blogpost/views/generic.load" beforeDir="false" />
+      <change beforePath="$USER_HOME$/blogpost/views/generic.pdf" beforeDir="false" />
+      <change beforePath="$USER_HOME$/blogpost/views/generic.rss" beforeDir="false" />
+      <change beforePath="$USER_HOME$/blogpost/views/generic.xml" beforeDir="false" />
+      <change beforePath="$USER_HOME$/blogpost/views/layout.html" beforeDir="false" />
+      <change beforePath="$USER_HOME$/blogpost/views/web2py_ajax.html" beforeDir="false" />
+      <change beforePath="$USER_HOME$/veb.cpp" beforeDir="false" />
+    </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -17,47 +394,8 @@
       <file leaf-file-name="views.py" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/Logistical/views.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="4532">
+            <state relative-caret-position="4642">
               <caret line="211" column="35" selection-start-line="211" selection-start-column="35" selection-end-line="211" selection-end-column="35" />
-              <folding>
-                <element signature="e#0#57#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="models.py" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/Logistical/models.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="924">
-              <caret line="42" column="30" selection-start-line="42" selection-start-column="30" selection-end-line="42" selection-end-column="30" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="base.html" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/Logistical/templates/base.html">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="264">
-              <caret line="12" column="48" selection-start-line="12" selection-start-column="48" selection-end-line="12" selection-end-column="48" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="urls.py" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/Intern_work/urls.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="440">
-              <caret line="23" column="10" selection-start-line="23" selection-start-column="10" selection-end-line="23" selection-end-column="10" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="settings.py" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/Intern_work/settings.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="439">
-              <caret line="123" column="24" selection-start-line="123" selection-start-column="24" selection-end-line="123" selection-end-column="24" />
             </state>
           </provider>
         </entry>
@@ -65,38 +403,17 @@
       <file leaf-file-name="login.html" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/Logistical/templates/registration/login.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="286">
-              <caret line="13" column="46" selection-start-line="13" selection-start-column="46" selection-end-line="13" selection-end-column="46" />
+            <state relative-caret-position="66">
+              <caret line="3" column="6" lean-forward="true" selection-start-line="3" selection-start-column="6" selection-end-line="3" selection-end-column="28" />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="urls.py" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/Logistical/urls.py">
+      <file leaf-file-name="base.html" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/Logistical/templates/base.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="88">
-              <caret line="5" column="10" lean-forward="true" selection-start-line="5" selection-start-column="10" selection-end-line="5" selection-end-column="10" />
-              <folding>
-                <element signature="e#0#28#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="taxes.html" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/Logistical/templates/taxes.html">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="396">
-              <caret line="18" column="14" lean-forward="true" selection-start-line="18" selection-start-column="14" selection-end-line="18" selection-end-column="14" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="products_and_services.html" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/Logistical/templates/products_and_services.html">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="374">
-              <caret line="17" column="14" lean-forward="true" selection-start-line="17" selection-start-column="14" selection-end-line="17" selection-end-column="14" />
+            <state relative-caret-position="528">
+              <caret line="24" column="68" selection-start-line="24" selection-start-column="68" selection-end-line="24" selection-end-column="68" />
             </state>
           </provider>
         </entry>
@@ -106,10 +423,18 @@
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
-        <option value="Python Script" />
         <option value="HTML File" />
+        <option value="Python Script" />
       </list>
     </option>
+  </component>
+  <component name="FindInProjectRecents">
+    <findStrings>
+      <find>UI</find>
+      <find>UI El</find>
+      <find>UI E</find>
+      <find>logout</find>
+    </findStrings>
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
@@ -128,7 +453,6 @@
         <option value="$PROJECT_DIR$/Logistical/templates/orders_form.html" />
         <option value="$PROJECT_DIR$/Logistical/templates/order.html" />
         <option value="$PROJECT_DIR$/Logistical/templates/taxes.html" />
-        <option value="$PROJECT_DIR$/Logistical/templates/base.html" />
         <option value="$PROJECT_DIR$/Logistical/templates/orders.html" />
         <option value="$PROJECT_DIR$/Logistical/templates/customers.html" />
         <option value="$PROJECT_DIR$/Logistical/templates/pod.html" />
@@ -138,8 +462,12 @@
         <option value="$PROJECT_DIR$/Intern_work/urls.py" />
         <option value="$PROJECT_DIR$/Logistical/templates/login.html" />
         <option value="$PROJECT_DIR$/Logistical/views.py" />
+        <option value="$PROJECT_DIR$/../mouse_track/UI_mouse.py" />
+        <option value="$PROJECT_DIR$/Logistical/templates/dashgum/Theme/index.html" />
+        <option value="$PROJECT_DIR$/Logistical/templates/dashgum/Theme/login.html" />
         <option value="$PROJECT_DIR$/Logistical/templates/registration/login.html" />
         <option value="$PROJECT_DIR$/Intern_work/settings.py" />
+        <option value="$PROJECT_DIR$/Logistical/templates/base.html" />
       </list>
     </option>
   </component>
@@ -152,7 +480,7 @@
   <component name="NodePackageJsonFileManager">
     <packageJsonPaths />
   </component>
-  <component name="ProjectFrameBounds">
+  <component name="ProjectFrameBounds" extendedState="6">
     <option name="x" value="383" />
     <option name="y" value="78" />
     <option name="width" value="1392" />
@@ -187,6 +515,27 @@
               <item name="Intern_work" type="b2602c69:ProjectViewProjectNode" />
               <item name="Intern_work" type="462c0819:PsiDirectoryNode" />
               <item name="Logistical" type="462c0819:PsiDirectoryNode" />
+              <item name="static" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="Intern_work" type="b2602c69:ProjectViewProjectNode" />
+              <item name="Intern_work" type="462c0819:PsiDirectoryNode" />
+              <item name="Logistical" type="462c0819:PsiDirectoryNode" />
+              <item name="static" type="462c0819:PsiDirectoryNode" />
+              <item name="Theme" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="Intern_work" type="b2602c69:ProjectViewProjectNode" />
+              <item name="Intern_work" type="462c0819:PsiDirectoryNode" />
+              <item name="Logistical" type="462c0819:PsiDirectoryNode" />
+              <item name="static" type="462c0819:PsiDirectoryNode" />
+              <item name="Theme" type="462c0819:PsiDirectoryNode" />
+              <item name="assets" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="Intern_work" type="b2602c69:ProjectViewProjectNode" />
+              <item name="Intern_work" type="462c0819:PsiDirectoryNode" />
+              <item name="Logistical" type="462c0819:PsiDirectoryNode" />
               <item name="templates" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
@@ -199,12 +548,14 @@
   <component name="PropertiesComponent">
     <property name="DefaultHtmlFileTemplate" value="HTML File" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$USER_HOME$/hackdtu-master" />
+    <property name="com.intellij.ide.scratch.LRUPopupBuilder$1/New Scratch File" value="Python" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../mouse_track" />
     <property name="nodejs_interpreter_path" value="/usr/bin/node" />
     <property name="settings.editor.selected.configurable" value="com.jetbrains.django.DjangoModulesConfigurable" />
   </component>
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/Logistical" />
       <recent name="$PROJECT_DIR$/Logistical/templates/registration" />
     </key>
   </component>
@@ -244,6 +595,64 @@
       <option name="useCustomRunCommand" value="false" />
       <option name="customRunCommand" value="" />
     </configuration>
+    <configuration default="true" type="tests" factoryName="Nosetests">
+      <module name="mouse_track" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="" />
+      <option name="IS_MODULE_SDK" value="false" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
+      <option name="_new_regexPattern" value="&quot;&quot;" />
+      <option name="_new_additionalArguments" value="&quot;&quot;" />
+      <option name="_new_target" value="&quot;&quot;" />
+      <option name="_new_targetType" value="&quot;PATH&quot;" />
+    </configuration>
+    <configuration default="true" type="tests" factoryName="Twisted Trial">
+      <module name="mouse_track" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="" />
+      <option name="IS_MODULE_SDK" value="false" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
+      <option name="_new_additionalArguments" value="&quot;&quot;" />
+      <option name="_new_target" value="&quot;&quot;" />
+      <option name="_new_targetType" value="&quot;PATH&quot;" />
+    </configuration>
+    <configuration default="true" type="tests" factoryName="Unittests">
+      <module name="mouse_track" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="" />
+      <option name="IS_MODULE_SDK" value="false" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
+      <option name="_new_additionalArguments" value="&quot;&quot;" />
+      <option name="_new_target" value="&quot;&quot;" />
+      <option name="_new_targetType" value="&quot;PATH&quot;" />
+    </configuration>
+    <configuration default="true" type="tests" factoryName="py.test">
+      <module name="mouse_track" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="" />
+      <option name="IS_MODULE_SDK" value="false" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
+      <option name="_new_keywords" value="&quot;&quot;" />
+      <option name="_new_additionalArguments" value="&quot;&quot;" />
+      <option name="_new_target" value="&quot;&quot;" />
+      <option name="_new_targetType" value="&quot;PATH&quot;" />
+    </configuration>
   </component>
   <component name="SvnConfiguration">
     <configuration />
@@ -259,16 +668,17 @@
     <servers />
   </component>
   <component name="ToolWindowManager">
-    <frame x="383" y="78" width="1392" height="968" extended-state="0" />
+    <frame x="65" y="-4" width="1855" height="1084" extended-state="6" />
+    <editor active="true" />
     <layout>
       <window_info anchor="bottom" id="TODO" order="6" />
       <window_info anchor="bottom" id="Event Log" order="7" side_tool="true" />
       <window_info anchor="bottom" id="Database Changes" order="7" show_stripe_button="false" />
       <window_info anchor="bottom" id="Version Control" order="7" />
       <window_info anchor="bottom" id="Python Console" order="7" weight="0.32948583" />
-      <window_info anchor="bottom" id="Run" order="2" weight="0.32948583" />
-      <window_info active="true" anchor="bottom" id="Terminal" order="7" visible="true" weight="0.26523298" />
-      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.2511144" />
+      <window_info anchor="bottom" id="Run" order="2" weight="0.32855436" />
+      <window_info anchor="bottom" id="Terminal" order="7" visible="true" weight="0.2633788" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.1973466" />
       <window_info anchor="bottom" id="Docker" order="7" show_stripe_button="false" />
       <window_info anchor="right" id="Database" order="3" />
       <window_info anchor="right" id="SciView" order="3" />
@@ -284,27 +694,27 @@
       <window_info anchor="bottom" id="Find" order="1" />
     </layout>
     <layout-to-restore>
-      <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.1973466" />
       <window_info anchor="bottom" id="Docker" order="7" show_stripe_button="false" />
-      <window_info anchor="bottom" id="Run" order="2" weight="0.32948583" />
-      <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
-      <window_info id="Favorites" order="2" side_tool="true" />
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.2473997" />
+      <window_info anchor="bottom" id="Version Control" order="8" />
+      <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
+      <window_info anchor="right" id="SciView" order="3" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info anchor="right" id="Commander" order="0" weight="0.4" />
-      <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
       <window_info anchor="bottom" id="TODO" order="6" />
-      <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
-      <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
-      <window_info anchor="right" id="Database" order="4" />
-      <window_info anchor="bottom" id="Terminal" order="11" visible="true" weight="0.26523298" />
-      <window_info anchor="bottom" id="Event Log" order="12" side_tool="true" />
       <window_info anchor="bottom" id="Database Changes" order="9" show_stripe_button="false" />
-      <window_info anchor="bottom" id="Version Control" order="8" />
-      <window_info anchor="right" id="SciView" order="3" />
+      <window_info anchor="bottom" id="Run" order="2" weight="0.32855436" />
       <window_info anchor="bottom" id="Find" order="1" />
       <window_info anchor="bottom" id="Python Console" order="10" weight="0.32948583" />
+      <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
+      <window_info anchor="right" id="Database" order="4" />
+      <window_info anchor="bottom" id="Terminal" order="11" visible="true" weight="0.2644281" />
+      <window_info anchor="bottom" id="Event Log" order="12" side_tool="true" />
+      <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
+      <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
+      <window_info anchor="bottom" id="Message" order="0" />
+      <window_info id="Favorites" order="2" side_tool="true" />
     </layout-to-restore>
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -319,44 +729,6 @@
     </breakpoint-manager>
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/Logistical/models.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1320">
-          <caret line="60" column="69" selection-start-line="60" selection-start-column="69" selection-end-line="60" selection-end-column="69" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Logistical/views.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="352">
-          <caret line="18" column="66" selection-start-line="18" selection-start-column="66" selection-end-line="18" selection-end-column="66" />
-          <folding>
-            <element signature="e#0#57#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Logistical/templates/suppliers.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="396">
-          <caret line="18" column="35" selection-start-line="18" selection-start-column="35" selection-end-line="18" selection-end-column="35" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Logistical/templates/products_and_services.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="264">
-          <caret line="12" column="26" selection-start-line="12" selection-start-column="26" selection-end-line="12" selection-end-column="26" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Intern_work/settings.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="858">
-          <caret line="39" column="17" selection-start-line="39" selection-start-column="17" selection-end-line="39" selection-end-column="17" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/Logistical/templates/taxes_form.html">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="154">
@@ -389,9 +761,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="660">
           <caret line="30" column="15" lean-forward="true" selection-start-line="30" selection-start-column="15" selection-end-line="30" selection-end-column="15" />
-          <folding>
-            <element signature="e#0#57#0" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -406,9 +775,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="198">
           <caret line="9" column="18" selection-start-line="9" selection-start-column="18" selection-end-line="9" selection-end-column="18" />
-          <folding>
-            <element signature="e#0#57#0" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -451,9 +817,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="22">
           <caret line="1" column="74" selection-start-line="1" selection-start-column="74" selection-end-line="1" selection-end-column="74" />
-          <folding>
-            <element signature="e#0#57#0" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -482,9 +845,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="22">
           <caret line="1" column="74" selection-start-line="1" selection-start-column="74" selection-end-line="1" selection-end-column="74" />
-          <folding>
-            <element signature="e#0#57#0" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -527,9 +887,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="22">
           <caret line="1" column="74" selection-start-line="1" selection-start-column="74" selection-end-line="1" selection-end-column="74" />
-          <folding>
-            <element signature="e#0#57#0" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -537,9 +894,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="110">
           <caret line="5" column="37" lean-forward="true" selection-start-line="5" selection-start-column="37" selection-end-line="5" selection-end-column="37" />
-          <folding>
-            <element signature="e#0#57#0" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -627,13 +981,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/Logistical/templates/customers.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="528">
-          <caret line="24" column="11" selection-start-line="24" selection-start-column="11" selection-end-line="24" selection-end-column="11" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/Logistical/templates/suppliers.html">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="484">
@@ -644,31 +991,14 @@
     <entry file="file://$PROJECT_DIR$/Logistical/templates/taxes.html">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="396">
-          <caret line="18" column="14" lean-forward="true" selection-start-line="18" selection-start-column="14" selection-end-line="18" selection-end-column="14" />
+          <caret line="18" column="14" selection-start-line="18" selection-start-column="14" selection-end-line="18" selection-end-column="14" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/Logistical/templates/products_and_services.html">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="374">
-          <caret line="17" column="14" lean-forward="true" selection-start-line="17" selection-start-column="14" selection-end-line="17" selection-end-column="14" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Logistical/templates/base.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="264">
-          <caret line="12" column="48" selection-start-line="12" selection-start-column="48" selection-end-line="12" selection-end-column="48" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Logistical/urls.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="88">
-          <caret line="5" column="10" lean-forward="true" selection-start-line="5" selection-start-column="10" selection-end-line="5" selection-end-column="10" />
-          <folding>
-            <element signature="e#0#28#0" expanded="true" />
-          </folding>
+          <caret line="17" column="14" selection-start-line="17" selection-start-column="14" selection-end-line="17" selection-end-column="14" />
         </state>
       </provider>
     </entry>
@@ -681,25 +1011,75 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/Logistical/views.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="4532">
+        <state relative-caret-position="4642">
           <caret line="211" column="35" selection-start-line="211" selection-start-column="35" selection-end-line="211" selection-end-column="35" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Logistical/templates/startbootstrap-sb-admin-2-gh-pages/pages/login.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-1049" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Logistical/templates/startbootstrap-sb-admin-2-gh-pages/package.json">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="374">
+          <caret line="17" column="27" selection-start-line="17" selection-start-column="19" selection-end-line="17" selection-end-column="27" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Logistical/templates/customers.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="517">
+          <caret line="24" column="11" selection-start-line="24" selection-start-column="11" selection-end-line="24" selection-end-column="11" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Logistical/urls.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="110">
+          <caret line="5" column="10" selection-start-line="5" selection-start-column="10" selection-end-line="5" selection-end-column="10" />
           <folding>
-            <element signature="e#0#57#0" expanded="true" />
+            <element signature="e#0#28#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/Logistical/templates/registration/login.html">
+    <entry file="file://$PROJECT_DIR$/Logistical/static/Theme/index.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="286">
-          <caret line="13" column="46" selection-start-line="13" selection-start-column="46" selection-end-line="13" selection-end-column="46" />
+        <state relative-caret-position="3542">
+          <caret line="188" column="56" selection-end-line="717" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Logistical/static/Theme/lock_screen.html">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Logistical/static/Theme/login.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="132">
+          <caret line="6" column="35" selection-start-line="6" selection-start-column="35" selection-end-line="6" selection-end-column="35" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/Intern_work/settings.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="439">
-          <caret line="123" column="24" selection-start-line="123" selection-start-column="24" selection-end-line="123" selection-end-column="24" />
+        <state relative-caret-position="496">
+          <caret line="123" column="14" selection-start-line="123" selection-start-column="14" selection-end-line="123" selection-end-column="14" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Logistical/templates/registration/login.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="66">
+          <caret line="3" column="6" lean-forward="true" selection-start-line="3" selection-start-column="6" selection-end-line="3" selection-end-column="28" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Logistical/templates/base.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="528">
+          <caret line="24" column="68" selection-start-line="24" selection-start-column="68" selection-end-line="24" selection-end-column="68" />
         </state>
       </provider>
     </entry>
