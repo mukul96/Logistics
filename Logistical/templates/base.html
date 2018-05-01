@@ -260,7 +260,9 @@
           <section class="wrapper">
 
               <div class="row">
-                  <div class="col-lg-9 main-chart">
+                  {% block content %}
+                    {% endblock %}
+                 <!-- <div class="col-lg-9 main-chart">
 
                   	<div class="row mtbox">
                   		<div class="col-md-2 col-sm-2 col-md-offset-1 box0">
@@ -620,6 +622,7 @@
                         </div><!-- / calendar -->
 
                   </div><!-- /col-lg-3 -->
+          -->
               </div><! --/row -->
           </section>
       </section>
@@ -717,7 +720,3 @@
   </body>
 </html>
 
-{% block content %}
-{% endblock %}
-</body>
-</html>
