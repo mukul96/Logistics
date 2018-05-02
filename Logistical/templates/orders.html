@@ -2,6 +2,83 @@
 {% block content %}
 orders here please
 <a href="orders_form/">Add more orders</a>
+    <style>
+    table,th,td{
+        border: 1px solid black;
+    }
+    </style>
+
+<table style="width: auto">
+        <tr>
+
+			<th> Name</th>
+            <th>Customer </th>
+            <th>Invoice date</th>
+            <th>Payment Due</th>
+			<th>Service Origin</th>
+            <th>Service Destination</th>
+            <th>Truck Number</th>
+            <th>Truck Type</th>
+            <th>Driver Name</th>
+            <th>Driver number</th>
+            <th>Advance Money</th>
+            <th>Balance Money</th>
+            <th>Mobile Number</th>
+            <th>Description</th>
+            <th>Service Fee</th>
+            <th>Taxes</th>
+            <th>Discount</th>
+            <th>Total in words</th>
+            <th>Name Supplier</th>
+            <th>Number of Supplier</th>
+            <th>Sac</th>
+            <th>Pan Number</th>
+            <th>edit</th>
+            <th>delete</th>
+</tr>
+
+
+{% for o in order %}
+
+
+
+                <tr>
+				<td>{{ o.name }}</td>
+				<td>{{ o.customer }}</td>
+				<td>{{ o.invoice_date }}</td>
+                <td>{{ o.payment_due }}</td>
+				<td>{{ o.service_origin }}</td>
+                <td>{{ o.service_destination }}</td>
+                <td>{{ o.truck_type }}</td>
+                <td>{{ o.truck_number }}</td>
+                <td>{{ o.driver_name }}</td>
+                <td>{{ o.driver_number }}</td>
+                <td>{{ o.advance_money }}</td>
+                <td>{{ o.balance_money }}</td>
+                <td>{{ o.mobile_number }}</td>
+                <td>{{ o.description }}</td>
+                <td>{{ o.service_fee }}</td>
+                <td>{{ o.taxes }}</td>
+                <td>{{ o.discount }}</td>
+                <td>{{ o.total_in_words }}</td>
+                <td>{{ o.name_supplier }}</td>
+                <td>{{ o.number_supplier }}</td>
+                <td>{{ o.sac}}</td>
+                <td>{{ o.pan_number}}</td>
+                <td><a href="orders_form/edit/{{ o.id }}/" >edit</a></td>
+                <td><form action="{% url 'orders_delete' %}" method="post">{% csrf_token %}
+                 <input type="hidden" name="id" value={{ o.id }}>
+                 <input type="submit" value="delete">
+                      </form>
+</td>
+</tr>
+
+
+
+
+
+{% endfor %}
+</table>
 {% for o in order %}
    <ul>
        <li> {{ o.name }}li>

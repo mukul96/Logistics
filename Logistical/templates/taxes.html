@@ -2,18 +2,45 @@
 {% block content %}
 Taxes here please
 <a href="tax_form/">Add more Tax</a>
+    <style>
+table,th,td{
+        border: 1px solid black;
+    }
+    </style>
+
+<table style="width: auto">
+        <tr>
+
+			<th>abbrevation</th>
+            <th>Tax name</th>
+            <th>Tax rate</th>
+
+</tr>
+
 
 {% for t in tax %}
-   <ul>
-    <li>{{ t.abbrevation }}</li>
-    <li>{{ t.tax_name }}</li>
-    <li>{{ t.tax_rate }}</li>
-    </ul>
-    <a href="tax_form/edit/{{ t.id }}/" >edit</a>
-    <form action="{% url 'tax_delete' %}" method="post">{% csrf_token %}
-        <input type="hidden" name="id" value={{ t.id }}>
-        <input type="submit" value="delete">
-    </form>
+
+
+
+                <tr>
+				<td>{{ t.abbrevation}}</td>
+				<td>{{ t.tax_name }}</td>
+				<td>{{ t.tax_rate }}</td>
+
+                <td><a href="taxes_form/edit/{{ t.id }}/" >edit</a></td>
+                <td><form action="{% url 'tax_delete' %}" method="post">{% csrf_token %}
+                 <input type="hidden" name="id" value={{ t.id }}>
+                 <input type="submit" value="delete">
+                      </form>
+</td>
+</tr>
+
+
+
+
+
 {% endfor %}
+</table>
+
 
 {% endblock %}

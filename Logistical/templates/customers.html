@@ -1,25 +1,58 @@
 {% extends 'base.html' %}
 {% block content %}
 Customers here please
-<a href="customers_form/">Add more Customer</a>
+<a href="customers_form/" >Add more Customer</a>
+    <style>
+    table,th,td{
+        border: 1px solid black;
+    }
+    </style>
+
+<table style="width: auto">
+        <tr>
+
+			<th>Customer First Name</th>
+            <th>Customer Last Name</th>
+            <th>Phone number</th>
+            <th>Postal Code</th>
+			<th>State</th>
+            <th>Website</th>
+            <th>City</th>
+            <th>email</th>
+            <th>address1</th>
+            <th>address2</th>
+            <th>edit</th>
+            <th>delete</th>
+</tr>
+
 
 {% for c in customer %}
-<ul>
-<li>{{ c.address_1 }}</li>
-<li>{{ c.address_2 }}</li>
-<li>{{ c.city }}</li>
-<li>{{ c.email }}</li>
-<li>{{ c.first_name }}</li>
-<li>{{ c.last_name }}</li>
-<li>{{ c.phone_number }}</li>
-<li>{{ c.postal_code }}</li>
-<li>{{ c.state }}</li>
-<li>{{ c.website }}</li>
-</ul>
-    <a href="customers_form/edit/{{ c.id }}/" >edit</a>
-<form action="{% url 'customers_delete' %}" method="post">{% csrf_token %}
-        <input type="hidden" name="id" value={{ c.id }}>
-        <input type="submit" value="delete">
-    </form>
+
+
+
+                <tr>
+				<td>{{ c.first_name }}</td>
+				<td>{{ c.last_name }}</td>
+				<td>{{ c.phone_number }}</td>
+				<td>{{ c.postal_code }}
+				<td>{{ c.state }}</td>
+                <td>{{ c.website }}</td>
+                <td>{{ c.city }}</td>
+                <td>{{ c.email }}</td>
+                <td>{{ c.address_1 }}</td>
+                <td>{{ c.address_2 }}</td>
+                <td><a href="customers_form/edit/{{ c.id }}/" >edit</a></td>
+                <td><form action="{% url 'customers_delete' %}" method="post">{% csrf_token %}
+                 <input type="hidden" name="id" value={{ c.id }}>
+                 <input type="submit" value="delete">
+                      </form>
+</td>
+</tr>
+
+
+
+
+
 {% endfor %}
+</table>
 {% endblock %}

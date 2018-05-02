@@ -3,16 +3,47 @@
 products and services here please
 <a href="products_form/">Add more Products</a>
 
+    <style>
+
+  table,th,td{
+        border: 1px solid black;
+    }
+    </style>
+
+<table style="width: auto">
+        <tr>
+
+
+            <th>Description</th>
+            <th>Sac</th>
+            <th>Taxes</th>
+            <th>edit</th>
+            <th>delete</th>
+</tr>
+
+
 {% for p in products %}
-   <ul>
-       <li> {{ p.description }}li>
-    <li>{{ p.sac }}</li>
-   <li> {{ p.Taxes }}</li>
-   </ul>
-<a href="products_form/edit/{{ p.id }}/" >edit</a>
-     <form action="{% url 'products_delete' %}" method="post">{% csrf_token %}
-        <input type="hidden" name="id" value={{ p.id }}>
-        <input type="submit" value="delete">
-    </form>
+
+
+
+                <tr>
+				<td>{{ p.description }}</td>
+				<td>{{ p.sac }}</td>
+				<td>{{ p.Taxes }}</td>
+
+                <td><a href="products_form/edit/{{ p.id }}/" >edit</a></td>
+                <td><form action="{% url 'products_delete' %}" method="post">{% csrf_token %}
+                 <input type="hidden" name="id" value={{ p.id }}>
+                 <input type="submit" value="delete">
+                      </form>
+</td>
+</tr>
+
+
+
+
+
 {% endfor %}
+</table>
+
 {% endblock %}

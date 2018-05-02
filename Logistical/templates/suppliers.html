@@ -2,22 +2,58 @@
 {% block content %}
 Suppliers here please
 <a href="suppliers_form/">Add more Supplier</a>
+    <style>
+    table,th,td{
+        border: 1px solid black;
+    }
+    </style>
+
+<table style="width: auto">
+        <tr>
+
+			<th>Supplier Name</th>
+            <th>Company Name</th>
+            <th>Mobile Number</th>
+            <th>No of own vehicles</th>
+			<th>Pan Number</th>
+            <th>service origin</th>
+            <th>service destination</th>
+            <th>Alternate number</th>
+            <th>address</th>
+
+            <th>edit</th>
+            <th>delete</th>
+</tr>
+
+
 {% for s in supplier %}
-    <ul>
-    <li>{{ s.address }}</li>
-    <li>{{ s.alternate_number }}</li>
-    <li>{{ s.company_name }}</li>
-    <li>{{ s.mobile_number }}</li>
-    <li>{{ s.no_own_vehicles }}</li>
-    <li>{{ s.pan_number }}</li>
-    <li>{{ s.service_destination }}</li>
-    <li>{{ s.service_origin }}</li>
-    <li> {{ s.supplier_name }}</li>
-    <a href="suppliers_form/edit/{{ s.id }}/" >edit</a>
-    <form action="{% url 'suppliers_delete' %}" method="post">{% csrf_token %}
-        <input type="hidden" name="id" value={{ s.id }}>
-        <input type="submit" value="delete">
-    </form>
-    </ul>
+
+
+
+                <tr>
+				<td>{{ s.supplier_name }}</td>
+				<td>{{ s.company_name }}</td>
+				<td>{{ s.mobile_number }}</td>
+				<td>{{ s.no_own_vehicles }}
+				<td>{{ s.pan_number }}</td>
+                <td>{{ s.service_origin }}</td>
+                <td>{{ s.service_destination }}</td>
+                <td>{{ s.alternate_number }}</td>
+                <td>{{ s.address }}</td>
+
+                <td><a href="suppliers_form/edit/{{ s.id }}/" >edit</a></td>
+                <td><form action="{% url 'customers_delete' %}" method="post">{% csrf_token %}
+                 <input type="hidden" name="id" value={{ s.id }}>
+                 <input type="submit" value="delete">
+                      </form>
+</td>
+</tr>
+
+
+
+
+
 {% endfor %}
+</table>
+
 {% endblock %}
