@@ -38,7 +38,7 @@
       TOP BAR CONTENT & NOTIFICATIONS
       *********************************************************************************************************************************************************** -->
       <!--header start-->
-      <header class="header black-bg">
+      <header class="header black-bg" style="background: #424a5c;border-bottom: 1px solid #6f6f6f;">
               <div class="sidebar-toggle-box">
                   <div class="fa fa-bars tooltips" data-placement="right" data-original-title="Toggle Navigation"></div>
               </div>
@@ -187,7 +187,7 @@
             </div>
             <div class="top-menu">
             	<ul class="nav pull-right top-menu">
-                    <li><a class="logout" href="{% url 'logout' %}">Logout</a></li>
+                    <li><a style="background: #424a5b;" class="logout" href="{% url 'logout' %}">Logout</a></li>
             	</ul>
             </div>
         </header>
@@ -212,40 +212,21 @@
                       </a>
                   </li>-->
 
-                  <li class="sub-menu">
-                      <a href="javascript:;" >
-                          <i class="fa fa-desktop"></i>
                           <span><li><a  href="{% url 'orders' %}">Orders</a></li></span>
-                      </a>
 
-                  </li>
-
-                  <li class="sub-menu">
-                      <a href="javascript:;" >
-                          <i class="fa fa-cogs"></i>
+                 
+                         
                           <span><li><a  href="{% url 'customers' %}">Customers</a></li></span>
-                      </a>
-                  </li>
-                  <li class="sub-menu">
-                      <a href="javascript:;" >
-                          <i class="fa fa-book"></i>
+                      
+                        
                           <span><li><a  href="{% url 'taxes' %}">Taxes</a></li></span>
-                      </a>
+                      
+                      
+                          <span><li><a  href="{% url 'suppliers' %}">Suppliers</a></li></span>                  
 
-                  </li>
-                  <li class="sub-menu">
-                      <a href="javascript:;" >
-                          <i class="fa fa-tasks"></i>
-                            <span><li><a  href="{% url 'suppliers' %}">Suppliers</a></li></span>                      </a>
-
-                  </li>
-                  <li class="sub-menu">
-                      <a href="javascript:;" >
-                          <i class="fa fa-th"></i>
+                        
                           <span><li><a  href="{% url 'products' %}">Products and Services</a></li></span>
-                      </a>
-
-                  </li>
+                     
               </ul>
               <!-- sidebar menu end-->
           </div>
@@ -630,7 +611,10 @@
 
       <!--main content end-->
       <!--footer start-->
-      <footer class="site-footer">
+      <footer class="site-footer" style="position: absolute;
+    bottom: 0px;
+    width: 100%;
+    background: #424a5c;">
           <div class="text-center">
               2018 Logistical
           </div>
