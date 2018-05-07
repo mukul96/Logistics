@@ -34,7 +34,6 @@
       <change afterPath="$PROJECT_DIR$/../API/profiles/tests.py" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/../API/profiles/urls.py" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/../API/profiles/views.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Logistical/static/Theme/assets/js/table_sorting.js" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/../mouse_track/UI_mouse.py" afterDir="false" />
       <change afterPath="$USER_HOME$/WebstormProjects/Elixir/.idea/jsLibraryMappings.xml" afterDir="false" />
       <change afterPath="$USER_HOME$/WebstormProjects/Elixir/.idea/misc.xml" afterDir="false" />
@@ -58,10 +57,9 @@
       <change afterPath="$USER_HOME$/WebstormProjects/Elixir/renderingHtml/index.html" afterDir="false" />
       <change afterPath="$USER_HOME$/WebstormProjects/Elixir/renderingHtml/server.js" afterDir="false" />
       <change afterPath="$USER_HOME$/WebstormProjects/Elixir/script.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Logistical/static/Theme/assets/js/table_sorting.js" beforeDir="false" afterPath="$PROJECT_DIR$/Logistical/static/Theme/assets/js/table_sorting.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Logistical/templates/base.html" beforeDir="false" afterPath="$PROJECT_DIR$/Logistical/templates/base.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Logistical/templates/customers.html" beforeDir="false" afterPath="$PROJECT_DIR$/Logistical/templates/customers.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/db.sqlite3" beforeDir="false" afterPath="$PROJECT_DIR$/db.sqlite3" afterDir="false" />
       <change beforePath="$USER_HOME$/blogpost/ABOUT" beforeDir="false" />
       <change beforePath="$USER_HOME$/blogpost/__init__.py" beforeDir="false" />
       <change beforePath="$USER_HOME$/blogpost/cache/cache.lock" beforeDir="false" />
@@ -410,8 +408,8 @@
       <file leaf-file-name="customers.html" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/Logistical/templates/customers.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="154">
-              <caret line="10" column="38" selection-start-line="10" selection-start-column="38" selection-end-line="10" selection-end-column="38" />
+            <state relative-caret-position="-726">
+              <caret line="21" column="48" selection-start-line="21" selection-start-column="48" selection-end-line="21" selection-end-column="48" />
               <folding>
                 <element signature="e#206#225#0#HTML" expanded="true" />
               </folding>
@@ -422,15 +420,19 @@
       <file leaf-file-name="base.html" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/Logistical/templates/base.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="8980">
-              <caret line="636" column="4" selection-start-line="636" selection-start-column="4" selection-end-line="636" selection-end-column="4" />
+            <state relative-caret-position="462">
+              <caret line="636" column="81" selection-start-line="636" selection-start-column="81" selection-end-line="636" selection-end-column="81" />
             </state>
           </provider>
         </entry>
       </file>
       <file leaf-file-name="table_sorting.js" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/Logistical/static/Theme/assets/js/table_sorting.js">
-          <provider selected="true" editor-type-id="text-editor" />
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="1188">
+              <caret line="54" column="2" selection-start-line="54" selection-start-column="2" selection-end-line="54" selection-end-column="2" />
+            </state>
+          </provider>
         </entry>
       </file>
     </leaf>
@@ -456,6 +458,7 @@
       <find>--&gt;</find>
       <find>href</find>
       <find>footer</find>
+      <find>table</find>
     </findStrings>
   </component>
   <component name="Git.Settings">
@@ -706,8 +709,8 @@
       <window_info anchor="bottom" id="Version Control" order="7" />
       <window_info anchor="bottom" id="Python Console" order="7" weight="0.32948583" />
       <window_info anchor="bottom" id="Run" order="2" weight="0.32855436" />
-      <window_info anchor="bottom" id="Terminal" order="7" visible="true" weight="0.250787" />
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.20619127" />
+      <window_info active="true" anchor="bottom" id="Terminal" order="7" visible="true" weight="0.250787" />
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.20619127" />
       <window_info anchor="bottom" id="Docker" order="7" show_stripe_button="false" />
       <window_info anchor="right" id="Database" order="3" />
       <window_info anchor="right" id="SciView" order="3" />
@@ -1092,19 +1095,23 @@
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/Logistical/static/Theme/assets/js/table_sorting.js">
-      <provider selected="true" editor-type-id="text-editor" />
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1188">
+          <caret line="54" column="2" selection-start-line="54" selection-start-column="2" selection-end-line="54" selection-end-column="2" />
+        </state>
+      </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/Logistical/templates/base.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="8980">
-          <caret line="636" column="4" selection-start-line="636" selection-start-column="4" selection-end-line="636" selection-end-column="4" />
+        <state relative-caret-position="462">
+          <caret line="636" column="81" selection-start-line="636" selection-start-column="81" selection-end-line="636" selection-end-column="81" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/Logistical/templates/customers.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="154">
-          <caret line="10" column="38" selection-start-line="10" selection-start-column="38" selection-end-line="10" selection-end-column="38" />
+        <state relative-caret-position="-726">
+          <caret line="21" column="48" selection-start-line="21" selection-start-column="48" selection-end-line="21" selection-end-column="48" />
           <folding>
             <element signature="e#206#225#0#HTML" expanded="true" />
           </folding>
