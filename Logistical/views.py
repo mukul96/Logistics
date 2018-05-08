@@ -109,7 +109,7 @@ def orders_form(request):
     if request.method == 'POST':
 
         form = OrdersForm(request.POST)
-        print(form.mobile_number)
+       # print(form.mobile_number)
         if form.is_valid():
             print("checking\n\n\n")
             # save the model to database, directly from the form:
