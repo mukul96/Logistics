@@ -1,5 +1,6 @@
 from django.forms import ModelForm
 from .models import Taxes,Products_and_Services,Customers,Orders,Suppliers
+from  django import forms
 
 class TaxesForm(ModelForm):
     class Meta:
@@ -23,6 +24,12 @@ class SuppliersForm(ModelForm):
         fields='__all__'
 
 class OrdersForm(ModelForm):
+    customer=forms.ModelChoiceField(queryset=Customers.objects.values('first_name'))
+    pan_number=forms.ModelChoiceField(queryset=Suppliers.objects.values('pan_number'))
+    number_supplier= forms.ModelChoiceField(queryset=Suppliers.objects.values('mobile_number'))
+    name_supplier= forms.ModelChoiceField(queryset=Suppliers.objects.values('supplier_name'))
+    sac= forms.ModelChoiceField(queryset=Products_and_Services.objects.values('sac'))
     class Meta:
-        model=Suppliers;
+        model=Orders;
+
         fields='__all__'

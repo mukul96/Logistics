@@ -1,5 +1,5 @@
 from django.db import models
-
+import datetime
 # Create your models here.
 
 class Customers(models.Model):
@@ -38,7 +38,7 @@ class Taxes(models.Model):
 class Orders(models.Model):
     name=models.CharField(max_length=256)
     customer=models.ForeignKey(Customers,on_delete=models.CASCADE)
-    invoice_date=models.DateField()
+    invoice_date=models.DateField(default=datetime.datetime.now())
     payment_due=models.DateField()
     service_origin=models.CharField(max_length=512)
     service_destination=models.CharField(max_length=512)

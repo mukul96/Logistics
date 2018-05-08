@@ -90,6 +90,7 @@ def suppliers_form(request):
 def customers_form(request):
     if request.method == 'POST':
         form = CustomersForm(request.POST)
+
         if form.is_valid():
             # save the model to database, directly from the form:
             Customers = form.save(commit=False)  # reference to my_model is often not needed at all, a simple form.save() is ok
@@ -106,8 +107,11 @@ def customers_form(request):
 @login_required(login_url='/login')
 def orders_form(request):
     if request.method == 'POST':
+
         form = OrdersForm(request.POST)
+        print(form.mobile_number)
         if form.is_valid():
+            print("checking\n\n\n")
             # save the model to database, directly from the form:
             Orders = form.save(commit=False)  # reference to my_model is often not needed at all, a simple form.save() is ok
             # alternatively
