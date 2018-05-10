@@ -24,11 +24,10 @@ class SuppliersForm(ModelForm):
         fields='__all__'
 
 class OrdersForm(ModelForm):
-    customer=forms.ModelChoiceField(queryset=Customers.objects.values('first_name'))
-    pan_number=forms.ModelChoiceField(queryset=Suppliers.objects.values('pan_number'))
-    number_supplier= forms.ModelChoiceField(queryset=Suppliers.objects.values('mobile_number'))
-    name_supplier= forms.ModelChoiceField(queryset=Suppliers.objects.values('supplier_name'))
-    sac= forms.ModelChoiceField(queryset=Products_and_Services.objects.values('sac'))
+    customer=forms.ModelChoiceField(queryset=Customers.objects.all())
+    name_supplier= forms.ModelChoiceField(queryset=Suppliers.objects.all())
+    sac= forms.ModelChoiceField(queryset=Products_and_Services.objects.all())
+    taxes=forms.ModelChoiceField(queryset=Taxes.objects.all())
     class Meta:
         model=Orders;
 

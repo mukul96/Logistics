@@ -109,20 +109,15 @@ def orders_form(request):
     if request.method == 'POST':
 
         form = OrdersForm(request.POST)
-       # print(form.mobile_number)
         if form.is_valid():
-            print("checking\n\n\n")
-            # save the model to database, directly from the form:
-            Orders = form.save(commit=False)  # reference to my_model is often not needed at all, a simple form.save() is ok
-            # alternatively
-            # my_model = form.save(commit=False)  # create model, but don't save to database
-            # my.model.something = whatever  # if I need to do something before saving it
-            Orders.save()
+            form.save()
             return redirect(reverse('orders'))
+        return redirect(reverse('orders'))
     else:
-        form = OrdersForm
+        form=OrdersForm
         context_data = {'form': form}
         return render(request, 'orders_form.html', context_data)
+
 
 @login_required(login_url='/login')
 def tax_form_edit(request,id=None):

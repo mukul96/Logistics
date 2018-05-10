@@ -11,7 +11,7 @@ orders here please
 <table style="width: auto">
         <tr>
 
-			<th> Name</th>
+
             <th>Customer </th>
             <th>Invoice date</th>
             <th>Payment Due</th>
@@ -30,9 +30,9 @@ orders here please
             <th>Discount</th>
             <th>Total in words</th>
             <th>Name Supplier</th>
-            <th>Number of Supplier</th>
+
             <th>Sac</th>
-            <th>Pan Number</th>
+
             <th>edit</th>
             <th>delete</th>
 </tr>
@@ -43,7 +43,7 @@ orders here please
 
 
                 <tr>
-				<td>{{ o.name }}</td>
+
 				<td>{{ o.customer }}</td>
 				<td>{{ o.invoice_date }}</td>
                 <td>{{ o.payment_due }}</td>
@@ -62,9 +62,9 @@ orders here please
                 <td>{{ o.discount }}</td>
                 <td>{{ o.total_in_words }}</td>
                 <td>{{ o.name_supplier }}</td>
-                <td>{{ o.number_supplier }}</td>
+
                 <td>{{ o.sac}}</td>
-                <td>{{ o.pan_number}}</td>
+
                 <td><a href="orders_form/edit/{{ o.id }}/" >edit</a></td>
                 <td><form action="{% url 'orders_delete' %}" method="post">{% csrf_token %}
                  <input type="hidden" name="id" value={{ o.id }}>
