@@ -23,8 +23,11 @@ class SuppliersForm(ModelForm):
         model=Suppliers;
         fields='__all__'
 
+
+
+
 class OrdersForm(ModelForm):
-    customer=forms.ModelChoiceField(queryset=Customers.objects.all())
+    customer=forms.ModelChoiceField(queryset=Customers.objects.all(),to_field_name='first_name')
     name_supplier= forms.ModelChoiceField(queryset=Suppliers.objects.all())
     sac= forms.ModelChoiceField(queryset=Products_and_Services.objects.all())
     taxes=forms.ModelChoiceField(queryset=Taxes.objects.all())
@@ -32,3 +35,7 @@ class OrdersForm(ModelForm):
         model=Orders;
 
         fields='__all__'
+
+
+
+
