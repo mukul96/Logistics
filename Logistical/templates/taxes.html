@@ -1,19 +1,23 @@
 {% extends 'base.html' %}
 {% block content %}
 Taxes here please
-<a href="tax_form/">Add more Tax</a>
+{% load staticfiles %}
+<script type="text/javascript" src="{% static "Theme/assets/js/table_sorting.js" %}">
+</script>
+    <a href="tax_form/">Add more Tax</a>
     <style>
 table,th,td{
         border: 1px solid black;
     }
     </style>
-
-<table style="width: auto">
+<table style="width: auto" id="myTable">
         <tr>
 
-			<th>abbrevation</th>
-            <th>Tax name</th>
-            <th>Tax rate</th>
+			<th onclick="sortTable(0)">abbrevation</th>
+            <th onclick="sortTable(1)">Tax name</th>
+            <th onclick="sortTable(2)">Tax rate</th>
+            <th onclick="sortTable(3)">Edit</th>
+            <th onclick="sortTable(4)">Delete</th>
 
 </tr>
 

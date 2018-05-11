@@ -15,7 +15,7 @@ urlpatterns=[
     path('pod/', views.pod),
     path('taxes/', views.taxes,name='taxes'),
     path('taxes/tax_form/',views.tax_form,name='tax_form'),
-    path('taxes/tax_form/edit/<int:id>/',views.tax_form_edit),
+    path('taxes/taxes_form/edit/<int:id>/',views.tax_form_edit),
     path('taxes/tax_delete/',views.tax_delete,name='tax_delete'),
     path('products_and_services/', views.products_and_services,name='products'),
     path('products_and_services/products_form/',views.products_form),

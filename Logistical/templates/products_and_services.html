@@ -1,6 +1,9 @@
 {% extends 'base.html' %}
 {% block content %}
 products and services here please
+           {% load staticfiles %}
+<script type="text/javascript" src="{% static "Theme/assets/js/table_sorting.js" %}">
+</script>
 <a href="products_form/">Add more Products</a>
 
     <style>
@@ -10,15 +13,15 @@ products and services here please
     }
     </style>
 
-<table style="width: auto">
+<table style="width: auto" id="myTable">
         <tr>
 
 
-            <th>Description</th>
-            <th>Sac</th>
-            <th>Taxes</th>
-            <th>edit</th>
-            <th>delete</th>
+            <th onclick="sortTable(0)">Description</th>
+            <th onclick="sortTable(1)">Sac</th>
+            <th onclick="sortTable(2)">Taxes</th>
+            <th onclick="sortTable(3)">edit</th>
+            <th onclick="sortTable(4)">delete</th>
 </tr>
 
 

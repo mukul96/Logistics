@@ -1,6 +1,9 @@
 {% extends 'base.html' %}
 {% block content %}
 orders here please
+        {% load staticfiles %}
+<script type="text/javascript" src="{% static "Theme/assets/js/table_sorting.js" %}">
+</script>
 <a href="orders_form/">Add more orders</a>
     <style>
     table,th,td{
@@ -8,33 +11,33 @@ orders here please
     }
     </style>
 
-<table style="width: auto">
+<table style="width: auto" id="myTable">
         <tr>
 
 
-            <th>Customer </th>
-            <th>Invoice date</th>
-            <th>Payment Due</th>
-			<th>Service Origin</th>
-            <th>Service Destination</th>
-            <th>Truck Number</th>
-            <th>Truck Type</th>
-            <th>Driver Name</th>
-            <th>Driver number</th>
-            <th>Advance Money</th>
-            <th>Balance Money</th>
-            <th>Mobile Number</th>
-            <th>Description</th>
-            <th>Service Fee</th>
-            <th>Taxes</th>
-            <th>Discount</th>
-            <th>Total in words</th>
-            <th>Name Supplier</th>
+            <th onclick="sortTable(0)">Customer </th>
+            <th onclick="sortTable(1)">Invoice date </th>
+            <th onclick="sortTable(2)">Payment Due</th>
+			<th onclick="sortTable(3)">Service Origin</th>
+            <th onclick="sortTable(4)">Service Destination</th>
+            <th onclick="sortTable(5)">Truck Number</th>
+            <th onclick="sortTable(6)">Truck Type</th>
+            <th onclick="sortTable(7)">Driver Name</th>
+            <th onclick="sortTable(8)">Driver number</th>
+            <th onclick="sortTable(9)">Advance Money</th>
+            <th onclick="sortTable(10)">Balance Money</th>
+            <th onclick="sortTable(11)">Mobile Number</th>
+            <th onclick="sortTable(12)">Description</th>
+            <th onclick="sortTable(13)">Service Fee</th>
+            <th onclick="sortTable(14)">Taxes</th>
+            <th onclick="sortTable(15)">Discount</th>
+            <th onclick="sortTable(16)">Total in words</th>
+            <th onclick="sortTable(17)">Name Supplier</th>
 
-            <th>Sac</th>
+            <th onclick="sortTable(18)">Sac</th>
 
-            <th>edit</th>
-            <th>delete</th>
+            <th onclick="sortTable(19)">edit</th>
+            <th onclick="sortTable(20)">delete</th>
 </tr>
 
 

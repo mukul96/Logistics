@@ -120,7 +120,7 @@ def orders_form(request):
 
 
 @login_required(login_url='/login')
-def tax_form_edit(request,id=None):
+def tax_form_edit(request,id):
     #print("checking")
 
     instance = get_object_or_404(Taxes, id=id)

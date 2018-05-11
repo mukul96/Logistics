@@ -1,6 +1,9 @@
 {% extends 'base.html' %}
 {% block content %}
 Suppliers here please
+    {% load staticfiles %}
+<script type="text/javascript" src="{% static "Theme/assets/js/table_sorting.js" %}">
+</script>
 <a href="suppliers_form/">Add more Supplier</a>
     <style>
     table,th,td{
@@ -8,21 +11,21 @@ Suppliers here please
     }
     </style>
 
-<table style="width: auto">
+<table style="width: auto" id="myTable">
         <tr>
 
-			<th>Supplier Name</th>
-            <th>Company Name</th>
-            <th>Mobile Number</th>
-            <th>No of own vehicles</th>
-			<th>Pan Number</th>
-            <th>service origin</th>
-            <th>service destination</th>
-            <th>Alternate number</th>
-            <th>address</th>
+			<th onclick="sortTable(0)">Supplier Name</th>
+            <th onclick="sortTable(1)">Company Name</th>
+            <th onclick="sortTable(2)">Mobile Number</th>
+            <th onclick="sortTable(3)">No of own vehicles</th>
+			<th onclick="sortTable(4)">Pan Number</th>
+            <th onclick="sortTable(5)">service origin</th>
+            <th onclick="sortTable(6)">service destination</th>
+            <th onclick="sortTable(7)">Alternate number</th>
+            <th onclick="sortTable(8)">address</th>
 
-            <th>edit</th>
-            <th>delete</th>
+            <th onclick="sortTable(9)">edit</th>
+            <th onclick="sortTable(10)">delete</th>
 </tr>
 
 
