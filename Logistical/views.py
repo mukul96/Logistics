@@ -33,7 +33,8 @@ def taxes(request):
 
 @login_required(login_url='/login')
 def pod(request):
-    return (render(request,"pod.html"))
+    pod=Pod.objects.all()
+    return (render(request,"pod.html",{'pod':pod}))
 
 @login_required(login_url='/login')
 def tax_form(request):
@@ -118,6 +119,19 @@ def orders_form(request):
         context_data = {'form': form}
         return render(request, 'orders_form.html', context_data)
 
+@login_required(login_url='/login')
+def pod_form(request):
+    if request.method == 'POST':
+
+        form = PodForm(request.POST)
+        if form.is_valid():
+            form.save()
+            return redirect(reverse('pod'))
+        return redirect(reverse('pod'))
+    else:
+        form=PodForm
+        context_data = {'form': form}
+        return render(request, 'pod_form.html', context_data)
 
 @login_required(login_url='/login')
 def tax_form_edit(request,id):
@@ -181,6 +195,18 @@ def orders_form_edit(request,id):
     return render(request, 'orders_form.html', {'form': form})
 
 @login_required(login_url='/login')
+def pod_form_edit(request,id):
+    #print("checking")
+
+    instance = get_object_or_404(Pod, id=id)
+    print(instance)
+    form = PodForm(request.POST or None, instance=instance)
+    if form.is_valid():
+        form.save()
+        return redirect(reverse('pod'))
+    return render(request, 'pod_form.html', {'form': form})
+
+@login_required(login_url='/login')
 def tax_delete(request):
     id=request.POST['id']
     instance = get_object_or_404(Taxes, id=id)
@@ -214,5 +240,12 @@ def orders_delete(request):
     instance = get_object_or_404(Orders, id=id)
     instance.delete()
     return redirect(reverse('orders'))
+
+@login_required(login_url='/login')
+def pod_delete(request):
+    id=request.POST['id']
+    instance = get_object_or_404(Pod, id=id)
+    instance.delete()
+    return redirect(reverse('pod'))
 
 

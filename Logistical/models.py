@@ -13,7 +13,6 @@ class Customers(models.Model):
     postal_code=models.IntegerField()
     address_1=models.TextField()
     address_2=models.TextField()
-
     def __str__(self):
         return u'{0}'.format(self.first_name)
 
@@ -65,6 +64,21 @@ class Orders(models.Model):
     name_supplier= models.ForeignKey(Suppliers, related_name="name_supplier", on_delete=models.CASCADE)
     sac = models.ForeignKey(Products_and_Services, related_name="saca", on_delete=models.CASCADE)
     taxes = models.ForeignKey(Taxes, on_delete=models.CASCADE)
+
+
+class Pod(models.Model):
+    pod_receiving_date=models.DateField(default=datetime.datetime.now())
+    loading_date=models.DateField(default=datetime.datetime.now())
+    lr_number=models.IntegerField()
+    truck_number=models.CharField(max_length=512)
+    receiver_name=models.CharField(max_length=512)
+    receiver_account_number=models.CharField(max_length=512)
+    bank_name=models.CharField(max_length=512)
+    amount=models.IntegerField()
+    payment_date=models.DateField(default=datetime.datetime.now())
+    remarks=models.TextField(null=True,blank=True)
+    consignor_name=models.CharField(max_length=512)
+
 
 
 

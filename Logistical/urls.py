@@ -4,6 +4,8 @@ from Logistical import views
 
 urlpatterns=[
     path('',views.orders,name='orders'),
+    path('orders_form/',views.orders_form),
+    path('orders_form/edit/<int:id>',views.orders_form_edit),
     path('orders/', views.orders,name='orders'),
     path('orders/orders_form/',views.orders_form),
     path('orders/orders_form/edit/<int:id>/',views.orders_form_edit),
@@ -12,7 +14,10 @@ urlpatterns=[
     path('suppliers/suppliers_form/', views.suppliers_form),
     path('suppliers/suppliers_form/edit/<int:id>/', views.suppliers_form_edit),
     path('suppliers/suppliers_delete/', views.suppliers_delete,name='suppliers_delete'),
-    path('pod/', views.pod),
+    path('pod/', views.pod,name='pod'),
+    path('pod/pod_form/', views.pod_form,name='pod_form'),
+    path('pod/pod_form/edit/<int:id>/', views.pod_form_edit,name='pod'),
+    path('pod/pod_delete/', views.pod_delete, name='pod_delete'),
     path('taxes/', views.taxes,name='taxes'),
     path('taxes/tax_form/',views.tax_form,name='tax_form'),
     path('taxes/taxes_form/edit/<int:id>/',views.tax_form_edit),

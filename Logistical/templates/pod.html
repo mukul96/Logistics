@@ -1,4 +1,64 @@
 {% extends 'base.html' %}
 {% block content %}
 Pod here please
+{% load staticfiles %}
+<script type="text/javascript" src="{% static "Theme/assets/js/table_sorting.js" %}">
+</script>
+    <a href="pod_form/">Add more Pod</a>
+    <style>
+table,th,td{
+        border: 1px solid black;
+    }
+    </style>
+<table style="width: auto" id="myTable">
+        <tr>
+
+			<th onclick="sortTable(0)">receiving date</th>
+            <th onclick="sortTable(1)">loading date</th>
+            <th onclick="sortTable(2)">lr number</th>
+            <th onclick="sortTable(3)">truck number</th>
+            <th onclick="sortTable(4)">receiver name</th>
+            <th onclick="sortTable(5)">receiver account number</th>
+            <th onclick="sortTable(6)">bank name</th>
+            <th onclick="sortTable(7)">amount</th>
+            <th onclick="sortTable(8)">payment date</th>
+            <th onclick="sortTable(9)">remarks</th>
+            <th onclick="sortTable(10)">consignor name</th>
+            <th onclick="sortTable(11)">Edit</th>
+            <th onclick="sortTable(12)">Delete</th>
+</tr>
+
+
+{% for p in pod %}
+
+
+
+                <tr>
+				<td>{{ p.pod_receiving_date}}</td>
+				<td>{{ p.loading_date }}</td>
+				<td>{{ p.lr_number}}</td>
+                <td>{{ p.truck_number}}</td>
+                <td>{{ p.receiver_name}}</td>
+                <td>{{ p.receiver_account_number }}</td>
+                <td>{{ p.bank_name}}</td>
+                <td>{{ p.amount}}</td>
+                <td>{{ p.payment_date}}</td>
+                <td>{{ p.remarks }}</td>
+                <td>{{ p.consignor_name}}</td>
+                <td><a href="pod_form/edit/{{ p.id }}/" >edit</a></td>
+                <td><form action="{% url 'pod_delete' %}" method="post">{% csrf_token %}
+                 <input type="hidden" name="id" value={{ p.id }}>
+                 <input type="submit" value="delete">
+                      </form>
+</td>
+</tr>
+
+
+
+
+
+{% endfor %}
+</table>
+
+
 {% endblock %}
