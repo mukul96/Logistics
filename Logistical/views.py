@@ -248,4 +248,8 @@ def pod_delete(request):
     instance.delete()
     return redirect(reverse('pod'))
 
+def taxes_detail(request,id):
+    tax=Taxes.objects.get(id=id);
+    return render(request,"taxes_detail.html",{'tax':tax})
+
 

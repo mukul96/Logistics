@@ -17,10 +17,10 @@ class Customers(models.Model):
         return u'{0}'.format(self.first_name)
 
 class Suppliers(models.Model):
-    company_name=models.CharField(max_length=256)
-    supplier_name=models.CharField(max_length=256)
+    company_name=models.CharField(max_length=256,null=False,blank=False)
+    supplier_name=models.CharField(max_length=256,null=False,blank=False)
     pan_number=models.IntegerField()
-    mobile_number=models.IntegerField()
+    mobile_number=models.IntegerField(null=False,blank=False)
     address=models.TextField()
     no_own_vehicles=models.IntegerField(default=1)
     alternate_number=models.IntegerField(default=mobile_number)
@@ -30,16 +30,16 @@ class Suppliers(models.Model):
         return u'{0}'.format(self.supplier_name)
 
 class Products_and_Services(models.Model):
-    description=models.TextField()
-    sac=models.IntegerField()
-    Taxes=models.IntegerField()
+    description=models.TextField(null=False,blank=False)
+    sac=models.IntegerField(null=False,blank=False)
+    Taxes=models.IntegerField(null=False,blank=False)
     def __str__(self):
         return u'{0}'.format(self.sac)
 
 class Taxes(models.Model):
-    tax_name=models.TextField()
-    abbrevation=models.TextField()
-    tax_rate=models.IntegerField()
+    tax_name=models.TextField(null=False,blank=False)
+    abbrevation=models.TextField(null=False,blank=False)
+    tax_rate=models.IntegerField(null=False,blank=False)
     def __str__(self):
         return u'{0}'.format(self.tax_name)
 
