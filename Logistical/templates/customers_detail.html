@@ -1,10 +1,29 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <title>Title</title>
-</head>
-<body>
+{% extends 'base.html' %}
+{% block content %}
+Customer<br>
 
-</body>
-</html>
+
+
+
+
+
+
+
+
+			first name:-	{{ customer.first_name }}<br>
+			last name:-	{{ customer.last_name }}<br>
+            phone number:- {{ customer.phone_number }}<br>
+			postal code:-	{{ customer.postal_code }} <br>
+			state:-	{{ customer.state }}<br>
+            website:-    {{ customer.website }}<br>
+            city:-{{ customer.city }}<br>
+             email:- {{ customer.email }}<br>
+              address1:-{{ customer.address_1 }}<br>
+              address2:-{{ customer.address_2 }}<br>
+                <a href="{% url 'customers_edit' customer.id %}" >edit</a><br>
+                <form action="{% url 'customers_delete' %}" method="post">{% csrf_token %}
+                 <input type="hidden" name="id" value={{ customer.id }}>
+                 <input type="submit" value="delete">
+                      </form>
+
+{% endblock %}

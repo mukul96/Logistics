@@ -36,8 +36,9 @@ orders here please
 
             <th onclick="sortTable(18)">Sac</th>
 
-            <th onclick="sortTable(19)">edit</th>
-            <th onclick="sortTable(20)">delete</th>
+            <th onclick="sortTable(19)">Edit</th>
+            <th onclick="sortTable(20)">Delete</th>
+            <th onclick="sortTable(21)">View details</th>
 </tr>
 
 
@@ -74,6 +75,8 @@ orders here please
                  <input type="submit" value="delete">
                       </form>
 </td>
+                <td><a href="{% url 'orders_detail' o.id %} ">details</a></td>
+
 </tr>
 
 

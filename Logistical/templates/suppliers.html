@@ -26,6 +26,7 @@ Suppliers here please
 
             <th onclick="sortTable(9)">edit</th>
             <th onclick="sortTable(10)">delete</th>
+            <th onclick="sortTable(11)">details</th>
 </tr>
 
 
@@ -45,11 +46,12 @@ Suppliers here please
                 <td>{{ s.address }}</td>
 
                 <td><a href="suppliers_form/edit/{{ s.id }}/" >edit</a></td>
-                <td><form action="{% url 'customers_delete' %}" method="post">{% csrf_token %}
+                <td><form action="{% url 'suppliers_delete' %}" method="post">{% csrf_token %}
                  <input type="hidden" name="id" value={{ s.id }}>
                  <input type="submit" value="delete">
                       </form>
 </td>
+                <td><a href="{% url 'suppliers_detail' s.id %}">details</a> </td>
 </tr>
 
 

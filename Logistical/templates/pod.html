@@ -26,6 +26,7 @@ table,th,td{
             <th onclick="sortTable(10)">consignor name</th>
             <th onclick="sortTable(11)">Edit</th>
             <th onclick="sortTable(12)">Delete</th>
+            <th onclick="sortTable(12)">Details</th>
 </tr>
 
 
@@ -51,6 +52,7 @@ table,th,td{
                  <input type="submit" value="delete">
                       </form>
 </td>
+                <td><a href="{% url 'pod_detail' p.id%}">details</a> </td>
 </tr>
 
 

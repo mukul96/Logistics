@@ -1,10 +1,66 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <title>Title</title>
-</head>
-<body>
+{% extends 'base.html' %}
+{% block content %}
 
-</body>
-</html>
+
+
+            <th onclick="sortTable(0)">Customer </th>
+            <th onclick="sortTable(1)">Invoice date </th>
+            <th onclick="sortTable(2)">Payment Due</th>
+			<th onclick="sortTable(3)">Service Origin</th>
+            <th onclick="sortTable(4)">Service Destination</th>
+            <th onclick="sortTable(5)">Truck Number</th>
+            <th onclick="sortTable(6)">Truck Type</th>
+            <th onclick="sortTable(7)">Driver Name</th>
+            <th onclick="sortTable(8)">Driver number</th>
+            <th onclick="sortTable(9)">Advance Money</th>
+            <th onclick="sortTable(10)">Balance Money</th>
+            <th onclick="sortTable(11)">Mobile Number</th>
+            <th onclick="sortTable(12)">Description</th>
+            <th onclick="sortTable(13)">Service Fee</th>
+            <th onclick="sortTable(14)">Taxes</th>
+            <th onclick="sortTable(15)">Discount</th>
+            <th onclick="sortTable(16)">Total in words</th>
+            <th onclick="sortTable(17)">Name Supplier</th>
+
+            <th onclick="sortTable(18)">Sac</th>
+
+
+
+
+
+
+
+
+
+			Customer:-	{{ o.customer }}<br>
+			invoice date:-	{{ o.invoice_date }}<br>
+            Payment due:-    {{ o.payment_due }} <br>
+			Service origin:-	{{ order.service_origin }} <br>
+            Service Destination  :  {{ order.service_destination }} <br>
+            trucktype:    {{ order.truck_type }}<br>
+             truck_number:-   {{ order.truck_number }}<br>
+             driver name:   {{ order.driver_name }}<br>
+             driver number:   {{ order.driver_number }}<br>
+            advance money:- {{ order.advance_money }}<br>
+            balance money:-    {{ order.balance_money }}<br>
+            mobile number:-    {{ order.mobile_number }}<br>
+            description:-    {{ order.description }}<br>
+            service fee:-    {{ order.service_fee }}<br>
+            taxes:-    {{ order.taxes }}<br>
+            discount:-    {{ order.discount }}<br>
+            total in words:-    {{ order.total_in_words }}<br>
+            name_supplier:-   {{ order.name_supplier }}<br>
+
+
+               sac:- {{ order.sac}}<br>
+
+              <a href="{% url 'orders_edit' order.id %}" >edit</a><br>
+                <form action="{% url 'orders_delete' %}" method="post">{% csrf_token %}
+                 <input type="hidden" name="id" value={{ order.id }}>
+                 <input type="submit" value="delete">
+                      </form>
+
+
+
+
+{% endblock %}>

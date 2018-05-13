@@ -26,6 +26,7 @@ Customers here please
             <th onclick="sortTable(9)">address2</th>
             <th onclick="sortTable(10)">edit</th>
             <th onclick="sortTable(11)">delete</th>
+            <th onclick="sortTable(12)">details</th>
 </tr>
 
 
@@ -50,6 +51,7 @@ Customers here please
                  <input type="submit" value="delete">
                       </form>
 </td>
+                <td><a href="{% url 'customers_detail' c.id %}">details</a> </td>
 </tr>
 
 

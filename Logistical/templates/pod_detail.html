@@ -1,10 +1,24 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <title>Title</title>
-</head>
-<body>
+{% extends 'base.html' %}
+{% block content %}
+Pod here<br>
 
-</body>
-</html>
+				receiving_date:-{{ pod.pod_receiving_date}}<br>
+				loading date:-{{ pod.loading_date }}<br>
+				lr_number:-{{ pod.lr_number}}<br>
+                truck_number:-{{ pod.truck_number}}<br>
+                receiver_date:-{{ pod.receiver_name}}<br>
+                receiver_account_number:-{{ pod.receiver_account_number }}<br>
+                bank_name:-{{ pod.bank_name}}<br>
+                amount:-{{ pod.amount}}<br>
+                payment_date:-{{ pod.payment_date}}<br>
+                remarks:-{{ pod.remarks }}<br>
+                consigner_name:-{{ pod.consignor_name}}<br>
+                <a href="{% url 'pod_edit' pod.id %}" >edit</a><br>
+                <td><form action="{% url 'pod_delete' %}" method="post">{% csrf_token %}
+                 <input type="hidden" name="id" value={{ pod.id }}>
+                 <input type="submit" value="delete">
+                      </form>
+
+
+
+{% endblock %}

@@ -282,7 +282,7 @@ def suppliers_detail(request,id):
 @login_required(login_url='/login')
 def products_detail(request,id):
     product=Products_and_Services.objects.get(id=id);
-    return render(request,"suppliers_detail.html",{'product':product})
+    return render(request,"products_detail.html",{'product':product})
 
 
 

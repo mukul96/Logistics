@@ -22,6 +22,7 @@ products and services here please
             <th onclick="sortTable(2)">Taxes</th>
             <th onclick="sortTable(3)">edit</th>
             <th onclick="sortTable(4)">delete</th>
+            <th onclick="sortTable(5)">details</th>
 </tr>
 
 
@@ -40,6 +41,7 @@ products and services here please
                  <input type="submit" value="delete">
                       </form>
 </td>
+                <td><a href="{% url 'products_detail' p.id %}">details</a> </td>
 </tr>
 
 

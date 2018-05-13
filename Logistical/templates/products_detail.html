@@ -1,10 +1,19 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <title>Title</title>
-</head>
-<body>
+{% extends 'base.html' %}
+{% block content %}
+products and services <br>
 
-</body>
-</html>
+
+
+
+				description:-{{ product.description }}<br>
+				sac:-{{ product.sac }}<br>
+				taxes:-{{ product.Taxes }}<br>
+
+                <a href="{% url 'products_edit' product.id %}" >edit</a><br>
+                <form action="{% url 'products_delete' %}" method="post">{% csrf_token %}
+                 <input type="hidden" name="id" value={{ product.id }}>
+                 <input type="submit" value="delete">
+                      </form>
+
+
+{% endblock %}
