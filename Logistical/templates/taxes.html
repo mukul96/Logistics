@@ -18,6 +18,7 @@ table,th,td{
             <th onclick="sortTable(2)">Tax rate</th>
             <th onclick="sortTable(3)">Edit</th>
             <th onclick="sortTable(4)">Delete</th>
+            <th onclick="sortTable(5)">Details</th>
 
 </tr>
 
@@ -37,6 +38,10 @@ table,th,td{
                  <input type="submit" value="delete">
                       </form>
 </td>
+
+                <td><a href="taxes_detail/{{ t.id }}/" >details</a></td>
+
+
 </tr>
 
 

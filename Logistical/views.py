@@ -248,8 +248,41 @@ def pod_delete(request):
     instance.delete()
     return redirect(reverse('pod'))
 
+
+@login_required(login_url='/login')
 def taxes_detail(request,id):
     tax=Taxes.objects.get(id=id);
     return render(request,"taxes_detail.html",{'tax':tax})
+
+@login_required(login_url='/login')
+def taxes_detail(request,id):
+    tax=Taxes.objects.get(id=id);
+    return render(request,"taxes_detail.html",{'tax':tax})
+
+@login_required(login_url='/login')
+def orders_detail(request,id):
+    order=Orders.objects.get(id=id);
+    return render(request,"orders_detail.html",{'order':order})
+
+@login_required(login_url='/login')
+def customers_detail(request,id):
+    customer=Customers.objects.get(id=id);
+    return render(request,"customers_detail.html",{'customer':customer})
+
+@login_required(login_url='/login')
+def pod_detail(request,id):
+    pod=Pod.objects.get(id=id);
+    return render(request,"pod_detail.html",{'pod':pod})
+
+@login_required(login_url='/login')
+def suppliers_detail(request,id):
+    supplier=Suppliers.objects.get(id=id);
+    return render(request,"suppliers_detail.html",{'supplier':supplier})
+
+@login_required(login_url='/login')
+def products_detail(request,id):
+    product=Products_and_Services.objects.get(id=id);
+    return render(request,"suppliers_detail.html",{'product':product})
+
 
 
