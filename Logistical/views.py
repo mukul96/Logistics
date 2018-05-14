@@ -266,8 +266,13 @@ def orders_detail(request,id):
 
 @login_required(login_url='/login')
 def customers_detail(request,id):
-    customer=Customers.objects.get(id=id);
-    return render(request,"customers_detail.html",{'customer':customer})
+    Customer=Customers.objects.get(id=id);
+    list_of_orders=[]
+    orders=Orders.objects.all()
+    for o in orders:
+        if o.customer==Customer:
+            list_of_orders.append(o)
+    return render(request,"customers_detail.html",{'customer':Customer,'orders':list_of_orders})
 
 @login_required(login_url='/login')
 def pod_detail(request,id):

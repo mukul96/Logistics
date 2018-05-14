@@ -1,6 +1,10 @@
 {% extends 'base.html' %}
 {% block content %}
-
+<style>
+form{
+    display: inline-block;
+}
+</style>
 
  <form action="" method="post" enctype="multipart/form-data">
      {% csrf_token %}

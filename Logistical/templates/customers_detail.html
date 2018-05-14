@@ -25,5 +25,31 @@ Customer<br>
                  <input type="hidden" name="id" value={{ customer.id }}>
                  <input type="submit" value="delete">
                       </form>
+    <h1>Orders correspong to the Customer</h1>
+    <ol>
+    {% for order in orders %}
+            <li>
+			invoice date:-	{{ order.invoice_date }}<br>
+            Payment due:-    {{ order.payment_due }} <br>
+			Service origin:-	{{ order.service_origin }} <br>
+            Service Destination  :  {{ order.service_destination }} <br>
+            trucktype:    {{ order.truck_type }}<br>
+             truck_number:-   {{ order.truck_number }}<br>
+             driver name:   {{ order.driver_name }}<br>
+             driver number:   {{ order.driver_number }}<br>
+            advance money:- {{ order.advance_money }}<br>
+            balance money:-    {{ order.balance_money }}<br>
+            mobile number:-    {{ order.mobile_number }}<br>
+            description:-    {{ order.description }}<br>
+            service fee:-    {{ order.service_fee }}<br>
+            taxes:-    {{ order.taxes }}<br>
+            discount:-    {{ order.discount }}<br>
+            total in words:-    {{ order.total_in_words }}<br>
+            name_supplier:-   {{ order.name_supplier }}<br>
+</li>
+
+               sac:- {{ order.sac}}<br>
+    {% endfor %}
+    </ol>
 
 {% endblock %}
