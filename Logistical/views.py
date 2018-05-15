@@ -289,5 +289,9 @@ def products_detail(request,id):
     product=Products_and_Services.objects.get(id=id);
     return render(request,"products_detail.html",{'product':product})
 
+@login_required(login_url='/login')
+def invoice_view(request):
+    return HttpResponse('invoice view')
+
 
 
