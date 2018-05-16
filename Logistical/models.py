@@ -1,18 +1,24 @@
 from django.db import models
 import datetime
 # Create your models here.
+STATUS_CHOICES = (
+    (1, (2.5)),
+    (2, (6)),
+    (3, (8.5)),
+    (4, (14))
+)
 
 class Customers(models.Model):
     first_name=models.CharField(max_length=256)
     last_name = models.CharField(max_length=256)
-    email=models.EmailField()
-    phone_number=models.IntegerField()
-    website=models.URLField()
-    state=models.CharField(max_length=256)
-    city=models.CharField(max_length=256)
-    postal_code=models.IntegerField()
-    address_1=models.TextField()
-    address_2=models.TextField()
+    phone_number = models.IntegerField()
+    state = models.CharField(max_length=256)
+    city = models.CharField(max_length=256)
+    email=models.EmailField(blank=True,null=True)
+    website=models.URLField(blank=True,null=True)
+    postal_code=models.IntegerField(blank=True,null=True)
+    address_1=models.TextField(blank=True,null=True)
+    address_2=models.TextField(blank=True,null=True)
     def __str__(self):
         return u'{0}'.format(self.first_name)
 
@@ -23,10 +29,10 @@ class Suppliers(models.Model):
     mobile_number = models.IntegerField()
     service_origin = models.TextField()
     service_destination = models.TextField()
-    pan_number=models.IntegerField(blank=True)
-    address=models.TextField(blank=True)
-    no_own_vehicles=models.IntegerField(default=1,blank=True)
-    alternate_number=models.IntegerField(default=mobile_number,blank=True)
+    pan_number=models.IntegerField(blank=True,null=True)
+    address=models.TextField(blank=True,null=True)
+    no_own_vehicles=models.IntegerField(default=1,blank=True,null=True)
+    alternate_number=models.IntegerField(default=mobile_number,blank=True,null=True)
     def __str__(self):
         return u'{0}'.format(self.supplier_name)
 
@@ -66,6 +72,8 @@ class Orders(models.Model):
     sac = models.ForeignKey(Products_and_Services, related_name="saca", on_delete=models.CASCADE)
     taxes = models.ForeignKey(Taxes, on_delete=models.CASCADE)
     freight=models.IntegerField(default=0)
+    sgst=models.IntegerField(choices=STATUS_CHOICES,default=1)
+    cgst=models.IntegerField(choices=STATUS_CHOICES,default=1)
 
 
 class Pod(models.Model):

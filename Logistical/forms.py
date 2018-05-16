@@ -18,12 +18,26 @@ class CustomersForm(ModelForm):
         model=Customers;
         fields='__all__'
 
+        def __init__(self, *args, **kwargs):
+            super(CustomersForm, self).__init__(*args, **kwargs)
+            self.fields['email'].required = False
+            self.fields['website'].required = False
+            self.fields['postal_code'].required = False
+            self.fields['address1'].required = False
+            self.fields['address2'].required = False
+
+
 class SuppliersForm(ModelForm):
     class Meta:
         model=Suppliers;
         fields='__all__'
 
-
+    def __init__(self, *args, **kwargs):
+        super(SuppliersForm, self).__init__(*args, **kwargs)
+        self.fields['address'].required = False
+        self.fields['pan_number'].required = False
+        self.fields['no_own_vehicles'].required = False
+        self.fields['alternate_number'].required = False
 
 
 class OrdersForm(ModelForm):
@@ -31,11 +45,10 @@ class OrdersForm(ModelForm):
     name_supplier= forms.ModelChoiceField(queryset=Suppliers.objects.all(),required=True)
     sac= forms.ModelChoiceField(queryset=Products_and_Services.objects.all(),required=True)
     taxes=forms.ModelChoiceField(queryset=Taxes.objects.all(),required=True)
-
     class Meta:
         model=Orders;
-
         fields='__all__'
+
 
 class PodForm(ModelForm):
     class Meta:
