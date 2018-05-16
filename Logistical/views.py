@@ -4,6 +4,11 @@ from .forms import *
 from django.shortcuts import get_object_or_404
 from django.urls import reverse
 from django.contrib.auth.decorators import login_required
+from django.template.loader import render_to_string
+from django.conf import settings
+import weasyprint
+from weasyprint import HTML
+import tempfile
 # Create your views here.
 @login_required(login_url='/login')
 def orders(request):
@@ -289,9 +294,29 @@ def products_detail(request,id):
     product=Products_and_Services.objects.get(id=id);
     return render(request,"products_detail.html",{'product':product})
 
-@login_required(login_url='/login')
-def invoice_view(request):
-    return HttpResponse('invoice view')
 
+
+@login_required(login_url='/login')
+def generate_pdf(request,id):
+    """Generate pdf."""
+    # Model data
+    order = Orders.objects.get(id=4)
+
+    # Rendered
+    html_string = render_to_string('pdf.html', {'order': order})
+    html = HTML(string=html_string)
+    result = html.write_pdf()
+
+    # Creating http response
+    response = HttpResponse(content_type='application/pdf;')
+    response['Content-Disposition'] = 'inline; filename=list_people.pdf'
+    response['Content-Transfer-Encoding'] = 'binary'
+    with tempfile.NamedTemporaryFile(delete=True) as output:
+        output.write(result)
+        output.flush()
+        output = open(output.name, 'rb')
+        response.write(output.read())
+
+    return response
 
 

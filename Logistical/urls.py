@@ -13,6 +13,7 @@ urlpatterns=[
     path('orders/orders_form/',views.orders_form),
     path('orders/orders_delete/',views.orders_delete,name='orders_delete'),
     path('orders/orders_detail/<int:id>/', views.orders_detail, name='orders_detail'),
+    path('orders/orders_detail/pdf/<int:id>/', views.generate_pdf, name='generate_orders_pdf'),
     path('suppliers/', views.suppliers,name='suppliers'),
     path('suppliers/suppliers_form/', views.suppliers_form),
     path('suppliers/suppliers_form/edit/<int:id>/', views.suppliers_form_edit,name='suppliers_edit'),

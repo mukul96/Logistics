@@ -1,8 +1,4 @@
-{% extends 'base.html' %}
-{% block content %}
-
-
-			Customer:-	{{ order.customer }}<br>
+Customer:-	{{ order.customer }}<br>
 			invoice date:-	{{ order.invoice_date }}<br>
             Payment due:-    {{ order.payment_due }} <br>
 			Service origin:-	{{ order.service_origin }} <br>
@@ -23,14 +19,3 @@
 
 
                sac:- {{ order.sac}}<br>
-
-              <a href="{% url 'orders_edit' order.id %}" >edit</a><br>
-                <form action="{% url 'orders_delete' %}" method="post">{% csrf_token %}
-                 <input type="hidden" name="id" value={{ order.id }}>
-                 <input type="submit" value="delete">
-                      </form>
-
-
-
-
-{% endblock %}>

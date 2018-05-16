@@ -39,6 +39,7 @@ orders here please
             <th onclick="sortTable(19)">Edit</th>
             <th onclick="sortTable(20)">Delete</th>
             <th onclick="sortTable(21)">View details</th>
+            <th onclick="sortTable(22)">invoice</th>
 </tr>
 
 
@@ -76,6 +77,7 @@ orders here please
                       </form>
 </td>
                 <td><a href="{% url 'orders_detail' o.id %} ">details</a></td>
+                <td><a href="{% url 'generate_orders_pdf' o.id %} ">pdf</a>
 
 </tr>
 
