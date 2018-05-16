@@ -8,9 +8,9 @@
 			Service origin:-	{{ order.service_origin }} <br>
             Service Destination  :  {{ order.service_destination }} <br>
             trucktype:    {{ order.truck_type }}<br>
-             truck_number:-   {{ order.truck_number }}<br>
-             driver name:   {{ order.driver_name }}<br>
-             driver number:   {{ order.driver_number }}<br>
+            truck_number:-   {{ order.truck_number }}<br>
+            driver name:   {{ order.driver_name }}<br>
+            driver number:   {{ order.driver_number }}<br>
             advance money:- {{ order.advance_money }}<br>
             balance money:-    {{ order.balance_money }}<br>
             mobile number:-    {{ order.mobile_number }}<br>
@@ -20,15 +20,14 @@
             discount:-    {{ order.discount }}<br>
             total in words:-    {{ order.total_in_words }}<br>
             name_supplier:-   {{ order.name_supplier }}<br>
-
-
-               sac:- {{ order.sac}}<br>
+            sac:- {{ order.sac}}<br>
 
               <a href="{% url 'orders_edit' order.id %}" >edit</a><br>
                 <form action="{% url 'orders_delete' %}" method="post">{% csrf_token %}
                  <input type="hidden" name="id" value={{ order.id }}>
                  <input type="submit" value="delete">
                       </form>
+    <a href="{% url 'generate_orders_pdf' order.id %}"> invoice</a>
 
 
 

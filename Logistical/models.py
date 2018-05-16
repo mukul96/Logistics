@@ -17,15 +17,16 @@ class Customers(models.Model):
         return u'{0}'.format(self.first_name)
 
 class Suppliers(models.Model):
-    company_name=models.CharField(max_length=256,null=False,blank=False)
-    supplier_name=models.CharField(max_length=256,null=False,blank=False)
-    pan_number=models.IntegerField()
-    mobile_number=models.IntegerField(null=False,blank=False)
-    address=models.TextField()
-    no_own_vehicles=models.IntegerField(default=1)
-    alternate_number=models.IntegerField(default=mobile_number)
-    service_origin=models.TextField()
-    service_destination=models.TextField()
+    company_name=models.CharField(max_length=256)
+    supplier_name=models.CharField(max_length=256)
+    type_of_supplier=models.CharField(max_length=512,default='manufacturer')
+    mobile_number = models.IntegerField()
+    service_origin = models.TextField()
+    service_destination = models.TextField()
+    pan_number=models.IntegerField(blank=True)
+    address=models.TextField(blank=True)
+    no_own_vehicles=models.IntegerField(default=1,blank=True)
+    alternate_number=models.IntegerField(default=mobile_number,blank=True)
     def __str__(self):
         return u'{0}'.format(self.supplier_name)
 
@@ -64,6 +65,7 @@ class Orders(models.Model):
     name_supplier= models.ForeignKey(Suppliers, related_name="name_supplier", on_delete=models.CASCADE)
     sac = models.ForeignKey(Products_and_Services, related_name="saca", on_delete=models.CASCADE)
     taxes = models.ForeignKey(Taxes, on_delete=models.CASCADE)
+    freight=models.IntegerField(default=0)
 
 
 class Pod(models.Model):

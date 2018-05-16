@@ -31,6 +31,7 @@ class OrdersForm(ModelForm):
     name_supplier= forms.ModelChoiceField(queryset=Suppliers.objects.all(),required=True)
     sac= forms.ModelChoiceField(queryset=Products_and_Services.objects.all(),required=True)
     taxes=forms.ModelChoiceField(queryset=Taxes.objects.all(),required=True)
+
     class Meta:
         model=Orders;
 
