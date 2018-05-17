@@ -25,7 +25,7 @@
               <a href="{% url 'orders_edit' order.id %}" >edit</a><br>
                 <form action="{% url 'orders_delete' %}" method="post">{% csrf_token %}
                  <input type="hidden" name="id" value={{ order.id }}>
-                 <input type="submit" value="delete">
+                 <input type="submit" id="del"value="delete">
                       </form>
     <a href="{% url 'generate_orders_pdf' order.id %}"> invoice</a>
 
