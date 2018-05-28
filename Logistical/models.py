@@ -9,6 +9,9 @@ STATUS_CHOICES = (
 )
 
 class Customers(models.Model):
+    company_name=models.CharField(max_length=256)
+    gstin=models.CharField(max_length=256)
+    customer_type=models.CharField(max_length=256)
     first_name=models.CharField(max_length=256)
     last_name = models.CharField(max_length=256)
     phone_number = models.IntegerField()
@@ -19,6 +22,7 @@ class Customers(models.Model):
     postal_code=models.IntegerField(blank=True,null=True)
     address_1=models.TextField(blank=True,null=True)
     address_2=models.TextField(blank=True,null=True)
+    remark=models.TextField(blank=True,null=True)
     def __str__(self):
         return u'{0}'.format(self.first_name)
 
@@ -27,9 +31,17 @@ class Suppliers(models.Model):
     supplier_name=models.CharField(max_length=256)
     type_of_supplier=models.CharField(max_length=512,default='manufacturer')
     mobile_number = models.IntegerField()
-    service_origin = models.TextField()
-    service_destination = models.TextField()
-    pan_number=models.IntegerField(blank=True,null=True)
+    service_origin1 = models.CharField()
+    service_origin2 = models.CharField()
+    service_origin3 = models.CharField()
+    service_origin4 = models.CharField()
+    service_origin5 = models.CharField()
+    service_destination1 = models.CharField()
+    service_destination2 = models.CharField()
+    service_destination3 = models.CharField()
+    service_destination4 = models.CharField()
+    service_destination5 = models.CharField()
+    pan_number=models.CharField(blank=True,null=True)
     address=models.TextField(blank=True,null=True)
     no_own_vehicles=models.IntegerField(default=1,blank=True,null=True)
     alternate_number=models.IntegerField(default=mobile_number,blank=True,null=True)

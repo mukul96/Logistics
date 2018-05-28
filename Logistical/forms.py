@@ -20,11 +20,13 @@ class CustomersForm(ModelForm):
 
         def __init__(self, *args, **kwargs):
             super(CustomersForm, self).__init__(*args, **kwargs)
+            self.fields['gstin'].required = False
             self.fields['email'].required = False
             self.fields['website'].required = False
             self.fields['postal_code'].required = False
             self.fields['address1'].required = False
             self.fields['address2'].required = False
+            self.fields['remark'].required = False
 
 
 class SuppliersForm(ModelForm):
@@ -54,6 +56,15 @@ class PodForm(ModelForm):
     class Meta:
         model=Pod
         fields='__all__'
+        def __init__(self, *args, **kwargs):
+            super(PodForm, self).__init__(*args, **kwargs)
+            self.fields['receiver_name'].required = False
+            self.fields['receiver_account_number'].required = False
+            self.fields['bank_name'].required = False
+            self.fields['payment_date'].required = False
+            self.fields['amount'].required = False
+
+
 
 
 
