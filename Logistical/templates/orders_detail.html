@@ -1,34 +1,34 @@
 {% extends 'base.html' %}
 {% block content %}
-
-
+<p>Order</p>
+<div id="align">
 			Customer:-	{{ order.customer }}<br>
-			invoice date:-	{{ order.invoice_date }}<br>
-            Payment due:-    {{ order.payment_due }} <br>
+			Invoice Date:-	{{ order.invoice_date }}<br>
+    	Payment Due:-    {{ order.payment_due }} <br>
 			Service origin:-	{{ order.service_origin }} <br>
-            Service Destination  :  {{ order.service_destination }} <br>
-            trucktype:    {{ order.truck_type }}<br>
-            truck_number:-   {{ order.truck_number }}<br>
-            driver name:   {{ order.driver_name }}<br>
-            driver number:   {{ order.driver_number }}<br>
-            advance money:- {{ order.advance_money }}<br>
-            balance money:-    {{ order.balance_money }}<br>
-            mobile number:-    {{ order.mobile_number }}<br>
-            description:-    {{ order.description }}<br>
-            service fee:-    {{ order.service_fee }}<br>
-            taxes:-    {{ order.taxes }}<br>
-            discount:-    {{ order.discount }}<br>
-            total in words:-    {{ order.total_in_words }}<br>
-            name_supplier:-   {{ order.name_supplier }}<br>
-            sac:- {{ order.sac}}<br>
+      Service Destination  :  {{ order.service_destination }} <br>
+      Truck Type:    {{ order.truck_type }}<br>
+      Truck Number:-   {{ order.truck_number }}<br>
+      Driver Name:   {{ order.driver_name }}<br>
+    	Driver Number:   {{ order.driver_number }}<br>
+      Advance Money:- {{ order.advance_money }}<br>
+      Balance Money:-    {{ order.balance_money }}<br>
+      Mobile Number:-    {{ order.mobile_number }}<br>
+      Description:-    {{ order.description }}<br>
+      Service Fee:-    {{ order.service_fee }}<br>
+      Taxes:-    {{ order.taxes }}<br>
+      Discount:-    {{ order.discount }}<br>
+      Total in Words:-    {{ order.total_in_words }}<br>
+      Name of Supplier:-   {{ order.name_supplier }}<br>
+      SAC:- {{ order.sac}}<br>
 
-              <a href="{% url 'orders_edit' order.id %}" >edit</a><br>
-                <form action="{% url 'orders_delete' %}" method="post">{% csrf_token %}
-                 <input type="hidden" name="id" value={{ order.id }}>
-                 <input type="submit" id="del"value="delete">
-                      </form>
-    <a href="{% url 'generate_orders_pdf' order.id %}"> invoice</a>
-
+      <a href="{% url 'orders_edit' order.id %}" >Edit</a><br>
+      <form action="{% url 'orders_delete' %}" method="post">{% csrf_token %}
+       <input type="hidden" name="id" value={{ order.id }}>
+       <input type="submit" id="del"value="Delete">
+      </form>
+    <a href="{% url 'generate_orders_pdf' order.id %}"> Invoice</a>
+</div>
 
 
 

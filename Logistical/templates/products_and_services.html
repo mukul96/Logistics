@@ -1,17 +1,10 @@
 {% extends 'base.html' %}
 {% block content %}
-products and services here please
            {% load staticfiles %}
 <script type="text/javascript" src="{% static "Theme/assets/js/table_sorting.js" %}">
 </script>
-<a href="products_form/">Add more Products</a>
+<p>Products and Services here please. <a href="products_form/">Add more Products</a></p>
 
-    <style>
-
-  table,th,td{
-        border: 1px solid black;
-    }
-    </style>
 
 <table style="width: auto" id="myTable">
         <tr>
@@ -20,9 +13,9 @@ products and services here please
             <th onclick="sortTable(0)">Description</th>
             <th onclick="sortTable(1)">Sac</th>
             <th onclick="sortTable(2)">Taxes</th>
-            <th onclick="sortTable(3)">edit</th>
-            <th onclick="sortTable(4)">delete</th>
-            <th onclick="sortTable(5)">details</th>
+            <th onclick="sortTable(3)">Edit</th>
+            <th onclick="sortTable(4)">Delete</th>
+            <th onclick="sortTable(5)">Details</th>
 </tr>
 
 
@@ -35,13 +28,13 @@ products and services here please
 				<td>{{ p.sac }}</td>
 				<td>{{ p.Taxes }}</td>
 
-                <td><a href="products_form/edit/{{ p.id }}/" >edit</a></td>
+                <td><a href="products_form/edit/{{ p.id }}/" >Edit</a></td>
                 <td><form action="{% url 'products_delete' %}" method="post">{% csrf_token %}
                  <input type="hidden" name="id" value={{ p.id }}>
-                 <input type="submit" value="delete">
+                 <input type="submit" value="Delete">
                       </form>
 </td>
-                <td><a href="{% url 'products_detail' p.id %}">details</a> </td>
+                <td><a href="{% url 'products_detail' p.id %}">Details</a> </td>
 </tr>
 
 

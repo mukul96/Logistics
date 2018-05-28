@@ -1,24 +1,24 @@
 {% extends 'base.html' %}
 {% block content %}
-Suppliers <br>
+<p>Suppliers </p>
 
 
+<div id="align">
 
+				Supplier Name:-{{ supplier.supplier_name }}<br>
+				Comapny Name:-{{ supplier.company_name }}<br>
+				Mobile Number:-{{ supplier.mobile_number }}<br>
+				Vehicles:-{{ supplier.no_own_vehicles }}<br>
+				Pan Number:-{{ supplier.pan_number }}<br>
+        Service Origin:-{{ supplier.service_origin }}<br>
+        Service Destination{{ supplier.service_destination }}<br>
+        Alternate Number{{ supplier.alternate_number }}<br>
+        Address{{ supplier.address }}<br>
 
-				supplier_name:-{{ supplier.supplier_name }}<br>
-				comapny_name:-{{ supplier.company_name }}<br>
-				mobile_number:-{{ supplier.mobile_number }}<br>
-				vehicles:-{{ supplier.no_own_vehicles }}<br>
-				pan_number:-{{ supplier.pan_number }}<br>
-                service_origin:-{{ supplier.service_origin }}<br>
-                service_destination{{ supplier.service_destination }}<br>
-                alternate_number{{ supplier.alternate_number }}<br>
-                address{{ supplier.address }}<br>
-
-                <a href="{% url 'suppliers_edit' supplier.id %}" >edit</a><br>
-                <form action="{% url 'suppliers_delete' %}" method="post">{% csrf_token %}
-                 <input type="hidden" name="id" value={{ s.id }}>
-                 <input type="submit" value="delete">
-                      </form>
-
+        <a href="{% url 'suppliers_edit' supplier.id %}" >Edit</a><br>
+        <form action="{% url 'suppliers_delete' %}" method="post">{% csrf_token %}
+         <input type="hidden" name="id" value={{ s.id }}>
+         <input type="submit" value="Delete">
+        </form>
+</div>
 {% endblock %}

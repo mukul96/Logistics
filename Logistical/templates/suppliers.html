@@ -1,15 +1,11 @@
 {% extends 'base.html' %}
 {% block content %}
-Suppliers here please
+
     {% load staticfiles %}
 <script type="text/javascript" src="{% static "Theme/assets/js/table_sorting.js" %}">
 </script>
-<a href="suppliers_form/">Add more Supplier</a>
-    <style>
-    table,th,td{
-        border: 1px solid black;
-    }
-    </style>
+<p>Suppliers here please. <a href="suppliers_form/">Add more Supplier</a></p>
+
 
 <table style="width: auto" id="myTable">
         <tr>
@@ -17,16 +13,15 @@ Suppliers here please
 			<th onclick="sortTable(0)">Supplier Name</th>
             <th onclick="sortTable(1)">Company Name</th>
             <th onclick="sortTable(2)">Mobile Number</th>
-            <th onclick="sortTable(3)">No of own vehicles</th>
+            <th onclick="sortTable(3)">No. of own vehicles</th>
 			<th onclick="sortTable(4)">Pan Number</th>
-            <th onclick="sortTable(5)">service origin</th>
-            <th onclick="sortTable(6)">service destination</th>
-            <th onclick="sortTable(7)">Alternate number</th>
-            <th onclick="sortTable(8)">address</th>
-
-            <th onclick="sortTable(9)">edit</th>
-            <th onclick="sortTable(10)">delete</th>
-            <th onclick="sortTable(11)">details</th>
+            <th onclick="sortTable(5)">Service Origin</th>
+            <th onclick="sortTable(6)">Service Destination</th>
+            <th onclick="sortTable(7)">Alternate Number</th>
+            <th onclick="sortTable(8)">Address</th>
+            <th onclick="sortTable(9)">Edit</th>
+            <th onclick="sortTable(10)">Delete</th>
+            <th onclick="sortTable(11)">Details</th>
 </tr>
 
 
@@ -45,13 +40,13 @@ Suppliers here please
                 <td>{{ s.alternate_number }}</td>
                 <td>{{ s.address }}</td>
 
-                <td><a href="suppliers_form/edit/{{ s.id }}/" >edit</a></td>
+                <td><a href="suppliers_form/edit/{{ s.id }}/" >Edit</a></td>
                 <td><form action="{% url 'suppliers_delete' %}" method="post">{% csrf_token %}
                  <input type="hidden" name="id" value={{ s.id }}>
-                 <input type="submit" value="delete">
+                 <input type="submit" value="Delete">
                       </form>
 </td>
-                <td><a href="{% url 'suppliers_detail' s.id %}">details</a> </td>
+                <td><a href="{% url 'suppliers_detail' s.id %}">Details</a> </td>
 </tr>
 
 

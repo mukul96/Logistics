@@ -1,15 +1,11 @@
 {% extends 'base.html' %}
 {% block content %}
-orders here please
+
         {% load staticfiles %}
 <script type="text/javascript" src="{% static "Theme/assets/js/table_sorting.js" %}">
 </script>
-<a href="orders_form/">Add more orders</a>
-    <style>
-    table,th,td{
-        border: 1px solid black;
-    }
-    </style>
+<p>Orders here please. <a href="orders_form/">Add more orders</a></p>
+
 
 <table style="width: auto" id="myTable">
         <tr>
@@ -70,14 +66,14 @@ orders here please
 
                 <td>{{ o.sac}}</td>
 
-                <td><a href="orders_form/edit/{{ o.id }}/" >edit</a></td>
+                <td><a href="orders_form/edit/{{ o.id }}/" >Edit</a></td>
                 <td><form action="{% url 'orders_delete' %}" method="post">{% csrf_token %}
                  <input type="hidden" name="id" value={{ o.id }}>
-                 <input type="submit" value="delete">
+                 <input type="submit" value="Delete">
                       </form>
 </td>
-                <td><a href="{% url 'orders_detail' o.id %} ">details</a></td>
-                <td><a href="{% url 'generate_orders_pdf' o.id %} ">pdf</a>
+                <td><a href="{% url 'orders_detail' o.id %} ">Details</a></td>
+                <td><a href="{% url 'generate_orders_pdf' o.id %} ">PDF</a>
 
 </tr>
 

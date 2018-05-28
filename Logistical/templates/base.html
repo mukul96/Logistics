@@ -29,6 +29,26 @@
       <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
       <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
     <![endif]-->
+    <style>
+      table,th,td{
+        border: 1px solid black;
+        padding: 3px;
+        text-align: center;
+        margin: 20px;;
+      }
+
+      th{
+        font-weight: bold;
+      }
+
+      #align{
+        margin: 10px;
+      }
+      p{
+        margin: 10px;
+        font-weight: bold;
+      }
+    </style>
   </head>
 
   <body>
@@ -214,21 +234,21 @@
 
                           <span><li><a  href="{% url 'orders' %}">Orders</a></li></span>
 
-                 
-                         
-                          <span><li><a  href="{% url 'customers' %}">Customers</a></li></span>
-                      
-                        
-                          <span><li><a  href="{% url 'taxes' %}">Taxes</a></li></span>
-                      
-                      
-                          <span><li><a  href="{% url 'suppliers' %}">Suppliers</a></li></span>                  
 
-                        
+
+                          <span><li><a  href="{% url 'customers' %}">Customers</a></li></span>
+
+
+                          <span><li><a  href="{% url 'taxes' %}">Taxes</a></li></span>
+
+
+                          <span><li><a  href="{% url 'suppliers' %}">Suppliers</a></li></span>
+
+
                           <span><li><a  href="{% url 'products' %}">Products and Services</a></li></span>
 
                           <span><li><a  href="{% url 'pod' %}">Pod</a></li></span>
-                     
+
               </ul>
               <!-- sidebar menu end-->
           </div>
@@ -704,4 +724,3 @@
 
   </body>
 </html>
-
