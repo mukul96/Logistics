@@ -40,6 +40,16 @@ class SuppliersForm(ModelForm):
         self.fields['pan_number'].required = False
         self.fields['no_own_vehicles'].required = False
         self.fields['alternate_number'].required = False
+        self.fields['service_destination1'].required = False
+        self.fields['service_destination2'].required = False
+        self.fields['service_destination3'].required = False
+        self.fields['service_destination4'].required = False
+        self.fields['service_destination5'].required = False
+        self.fields['service_origin1'].required = False
+        self.fields['service_origin2'].required = False
+        self.fields['service_origin3'].required = False
+        self.fields['service_origin4'].required = False
+        self.fields['service_origin5'].required = False
 
 
 class OrdersForm(ModelForm):
