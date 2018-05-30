@@ -1,0 +1,18 @@
+{% extends 'base.html' %}
+{% block content %}
+<p>Products and Services </p>
+
+
+<div id="align">
+
+				Description:-{{ product.description }}<br>
+				SAC:-{{ product.sac }}<br>
+				Taxes:-{{ product.Taxes }}<br>
+        <a href="{% url 'products_edit' product.id %}" >Edit</a><br>
+        <form action="{% url 'products_delete' %}" method="post">{% csrf_token %}
+         <input type="hidden" name="id" value={{ product.id }}>
+         <input type="submit" value="Delete">
+        </form>
+
+</div>
+{% endblock %}

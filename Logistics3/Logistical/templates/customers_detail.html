@@ -1,0 +1,56 @@
+{% extends 'base.html' %}
+{% block content %}
+<p>Customer</p>
+
+
+
+
+
+
+
+
+<div id="align">
+			First Name:-	{{ customer.first_name }}<br>
+			Last Name:-	{{ customer.last_name }}<br>
+      Phone Number:- {{ customer.phone_number }}<br>
+			Postal Code:-	{{ customer.postal_code }} <br>
+			State:-	{{ customer.state }}<br>
+      Website:-    {{ customer.website }}<br>
+      City:-{{ customer.city }}<br>
+      Email:- {{ customer.email }}<br>
+      Address1:-{{ customer.address_1 }}<br>
+      Address2:-{{ customer.address_2 }}<br>
+      <a href="{% url 'customers_edit' customer.id %}" >Edit</a><br>
+      <form action="{% url 'customers_delete' %}" method="post">{% csrf_token %}
+       <input type="hidden" name="id" value={{ customer.id }}>
+       <input type="submit" value="Delete">
+      </form>
+
+
+		<h1 style="margin: 25px;">Orders correspong to the Customer</h1>
+    <ol>
+    {% for order in orders %}
+    <li>
+			Invoice Date:-	{{ order.invoice_date }}<br>
+      Payment Due:-    {{ order.payment_due }} <br>
+			Service Origin:-	{{ order.service_origin }} <br>
+      Service Destination  :  {{ order.service_destination }} <br>
+      Truck Type:    {{ order.truck_type }}<br>
+      Truck Number:-   {{ order.truck_number }}<br>
+      Driver Name:   {{ order.driver_name }}<br>
+      Driver Number:   {{ order.driver_number }}<br>
+      Advance Money:- {{ order.advance_money }}<br>
+      Balance Money:-    {{ order.balance_money }}<br>
+      Mobile Number:-    {{ order.mobile_number }}<br>
+      Description:-    {{ order.description }}<br>
+      Service Fee:-    {{ order.service_fee }}<br>
+      Taxes:-    {{ order.taxes }}<br>
+      Discount:-    {{ order.discount }}<br>
+      Total in Words:-    {{ order.total_in_words }}<br>
+      Name Supplier:-   {{ order.name_supplier }}<br>
+     	sac:- {{ order.sac}}<br>
+		</li>
+    {% endfor %}
+    </ol>
+</div>
+{% endblock %}

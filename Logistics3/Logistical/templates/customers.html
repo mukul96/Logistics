@@ -1,0 +1,59 @@
+{% extends 'base.html' %}
+{% block content %}
+
+           {% load staticfiles %}
+<script type="text/javascript" src="{% static "Theme/assets/js/table_sorting.js" %}">
+</script>
+<p>Customers here please. <a href="customers_form/" >Add more Customer</a></p>
+
+
+<table style="width: auto" id="myTable">
+        <tr>
+
+			<th onclick="sortTable(0)">Customer First Name</th>
+      <th onclick="sortTable(1)">Customer Last Name</th>
+      <th onclick="sortTable(2)">Phone number</th>
+      <th onclick="sortTable(3)">Postal Code</th>
+			<th onclick="sortTable(4)">State</th>
+      <th onclick="sortTable(5)">Website</th>
+      <th onclick="sortTable(6)">City</th>
+      <th onclick="sortTable(7)">Email</th>
+      <th onclick="sortTable(8)">Address1</th>
+      <th onclick="sortTable(9)">Address2</th>
+      <th onclick="sortTable(10)">Edit</th>
+      <th onclick="sortTable(11)">Delete</th>
+      <th onclick="sortTable(12)">Details</th>
+</tr>
+
+
+{% for c in customer %}
+
+
+
+                <tr>
+				<td>{{ c.first_name }}</td>
+				<td>{{ c.last_name }}</td>
+				<td>{{ c.phone_number }}</td>
+				<td>{{ c.postal_code }}
+				<td>{{ c.state }}</td>
+        <td>{{ c.website }}</td>
+        <td>{{ c.city }}</td>
+        <td>{{ c.email }}</td>
+        <td>{{ c.address_1 }}</td>
+        <td>{{ c.address_2 }}</td>
+        <td><a href="customers_form/edit/{{ c.id }}/" >Edit</a></td>
+                <td><form action="{% url 'customers_delete' %}" method="post">{% csrf_token %}
+                 <input type="hidden" name="id" value={{ c.id }}>
+                 <input type="submit" value="Delete">
+                      </form>
+</td>
+                <td><a href="{% url 'customers_detail' c.id %}">Details</a> </td>
+</tr>
+
+
+
+
+
+{% endfor %}
+</table>
+{% endblock %}

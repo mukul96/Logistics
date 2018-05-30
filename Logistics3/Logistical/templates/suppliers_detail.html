@@ -1,0 +1,24 @@
+{% extends 'base.html' %}
+{% block content %}
+<p>Suppliers </p>
+
+
+<div id="align">
+
+				Supplier Name:-{{ supplier.supplier_name }}<br>
+				Comapny Name:-{{ supplier.company_name }}<br>
+				Mobile Number:-{{ supplier.mobile_number }}<br>
+				Vehicles:-{{ supplier.no_own_vehicles }}<br>
+				Pan Number:-{{ supplier.pan_number }}<br>
+        Service Origin:-{{ supplier.service_origin }}<br>
+        Service Destination{{ supplier.service_destination }}<br>
+        Alternate Number{{ supplier.alternate_number }}<br>
+        Address{{ supplier.address }}<br>
+
+        <a href="{% url 'suppliers_edit' supplier.id %}" >Edit</a><br>
+        <form action="{% url 'suppliers_delete' %}" method="post">{% csrf_token %}
+         <input type="hidden" name="id" value={{ s.id }}>
+         <input type="submit" value="Delete">
+        </form>
+</div>
+{% endblock %}

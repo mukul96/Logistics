@@ -1,0 +1,47 @@
+{% extends 'base.html' %}
+{% block content %}
+           {% load staticfiles %}
+<script type="text/javascript" src="{% static "Theme/assets/js/table_sorting.js" %}">
+</script>
+<p>Products and Services here please. <a href="products_form/">Add more Products</a></p>
+
+
+<table style="width: auto" id="myTable">
+        <tr>
+
+
+            <th onclick="sortTable(0)">Description</th>
+            <th onclick="sortTable(1)">Sac</th>
+            <th onclick="sortTable(2)">Taxes</th>
+            <th onclick="sortTable(3)">Edit</th>
+            <th onclick="sortTable(4)">Delete</th>
+            <th onclick="sortTable(5)">Details</th>
+</tr>
+
+
+{% for p in products %}
+
+
+
+                <tr>
+				<td>{{ p.description }}</td>
+				<td>{{ p.sac }}</td>
+				<td>{{ p.Taxes }}</td>
+
+                <td><a href="products_form/edit/{{ p.id }}/" >Edit</a></td>
+                <td><form action="{% url 'products_delete' %}" method="post">{% csrf_token %}
+                 <input type="hidden" name="id" value={{ p.id }}>
+                 <input type="submit" value="Delete">
+                      </form>
+</td>
+                <td><a href="{% url 'products_detail' p.id %}">Details</a> </td>
+</tr>
+
+
+
+
+
+{% endfor %}
+</table>
+
+{% endblock %}

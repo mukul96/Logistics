@@ -1,0 +1,24 @@
+{% extends 'base.html' %}
+{% block content %}
+<p>Pod here</p>
+
+<div id="align">
+				Receiving Date:-{{ pod.pod_receiving_date}}<br>
+				Loading Date:-{{ pod.loading_date }}<br>
+				LR Number:-{{ pod.lr_number}}<br>
+        Truck Number:-{{ pod.truck_number}}<br>
+        Receiver Date:-{{ pod.receiver_name}}<br>
+        Receiver Account Number:-{{ pod.receiver_account_number }}<br>
+        Bank Name:-{{ pod.bank_name}}<br>
+        Amount:-{{ pod.amount}}<br>
+        Payment Date:-{{ pod.payment_date}}<br>
+        Remarks:-{{ pod.remarks }}<br>
+        Consigner Name:-{{ pod.consignor_name}}<br>
+        <a href="{% url 'pod_edit' pod.id %}" >Edit</a><br>
+        <form action="{% url 'pod_delete' %}" method="post">{% csrf_token %}
+         <input type="hidden" name="id" value={{ pod.id }}>
+         <input type="submit" value="Delete">
+        </form>
+
+</div>
+{% endblock %}

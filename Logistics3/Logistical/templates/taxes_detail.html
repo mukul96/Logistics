@@ -1,0 +1,18 @@
+{% extends 'base.html' %}
+{% block content %}
+<p>All Taxes here please</p>
+
+    <div id="align">
+      <span> Tax abbrevation:- {{ tax.abbrevation }}</span><br>
+      <span> Tax name:- {{ tax.tax_name }}</span><br>
+	    <span> tax rate:- {{ tax.tax_rate }}</span><br>
+
+      <a href={% url 'tax_edit' tax.id %} >Edit</a>
+
+      <form action="{% url 'tax_delete' %}" method="post">{% csrf_token %}
+       <input type="hidden" name="id" value={{ tax.id }}>
+       <input type="submit" value="Delete">
+      </form>
+    </div>
+
+{% endblock %}

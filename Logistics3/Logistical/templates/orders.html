@@ -1,0 +1,87 @@
+{% extends 'base.html' %}
+{% block content %}
+
+        {% load staticfiles %}
+<script type="text/javascript" src="{% static "Theme/assets/js/table_sorting.js" %}">
+</script>
+<p>Orders here please. <a href="orders_form/">Add more orders</a></p>
+
+
+<table style="width: auto" id="myTable">
+        <tr>
+
+
+            <th onclick="sortTable(0)">Customer </th>
+            <th onclick="sortTable(1)">Invoice date </th>
+            <th onclick="sortTable(2)">Payment Due</th>
+			<th onclick="sortTable(3)">Service Origin</th>
+            <th onclick="sortTable(4)">Service Destination</th>
+            <th onclick="sortTable(5)">Truck Number</th>
+            <th onclick="sortTable(6)">Truck Type</th>
+            <th onclick="sortTable(7)">Driver Name</th>
+            <th onclick="sortTable(8)">Driver number</th>
+            <th onclick="sortTable(9)">Advance Money</th>
+            <th onclick="sortTable(10)">Balance Money</th>
+            <th onclick="sortTable(11)">Mobile Number</th>
+            <th onclick="sortTable(12)">Description</th>
+            <th onclick="sortTable(13)">Service Fee</th>
+            <th onclick="sortTable(14)">Taxes</th>
+            <th onclick="sortTable(15)">Discount</th>
+            <th onclick="sortTable(16)">Total in words</th>
+            <th onclick="sortTable(17)">Name Supplier</th>
+
+            <th onclick="sortTable(18)">Sac</th>
+
+            <th onclick="sortTable(19)">Edit</th>
+            <th onclick="sortTable(20)">Delete</th>
+            <th onclick="sortTable(21)">View details</th>
+            <th onclick="sortTable(22)">invoice</th>
+</tr>
+
+
+{% for o in order %}
+
+
+
+                <tr>
+
+				<td>{{ o.customer }}</td>
+				<td>{{ o.invoice_date }}</td>
+                <td>{{ o.payment_due }}</td>
+				<td>{{ o.service_origin }}</td>
+                <td>{{ o.service_destination }}</td>
+                <td>{{ o.truck_type }}</td>
+                <td>{{ o.truck_number }}</td>
+                <td>{{ o.driver_name }}</td>
+                <td>{{ o.driver_number }}</td>
+                <td>{{ o.advance_money }}</td>
+                <td>{{ o.balance_money }}</td>
+                <td>{{ o.mobile_number }}</td>
+                <td>{{ o.description }}</td>
+                <td>{{ o.service_fee }}</td>
+                <td>{{ o.taxes }}</td>
+                <td>{{ o.discount }}</td>
+                <td>{{ o.total_in_words }}</td>
+                <td>{{ o.name_supplier }}</td>
+
+                <td>{{ o.sac}}</td>
+
+                <td><a href="orders_form/edit/{{ o.id }}/" >Edit</a></td>
+                <td><form action="{% url 'orders_delete' %}" method="post">{% csrf_token %}
+                 <input type="hidden" name="id" value={{ o.id }}>
+                 <input type="submit" value="Delete">
+                      </form>
+</td>
+                <td><a href="{% url 'orders_detail' o.id %} ">Details</a></td>
+                <td><a href="{% url 'generate_orders_pdf' o.id %} ">PDF</a>
+
+</tr>
+
+
+
+
+
+{% endfor %}
+</table>
+
+{% endblock %}
