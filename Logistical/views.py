@@ -300,7 +300,7 @@ def products_detail(request,id):
 def generate_pdf(request,id):
     """Generate pdf."""
     # Model data
-    order = Orders.objects.get(id=4)
+    order = Orders.objects.get(id=id)
 
     # Rendered
     html_string = render_to_string('pdf.html', {'order': order})
@@ -311,12 +311,10 @@ def generate_pdf(request,id):
     response = HttpResponse(content_type='application/pdf;')
     response['Content-Disposition'] = 'inline; filename=list_people.pdf'
     response['Content-Transfer-Encoding'] = 'binary'
-    with tempfile.NamedTemporaryFile(delete=True) as output:
+    with tempfile.NamedTemporaryFile(delete=False) as output:
         output.write(result)
         output.flush()
         output = open(output.name, 'rb')
         response.write(output.read())
 
     return response
-
-
